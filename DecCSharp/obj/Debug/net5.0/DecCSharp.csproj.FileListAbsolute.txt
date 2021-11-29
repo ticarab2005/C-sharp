@@ -1,0 +1,16 @@
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\bin\Debug\net5.0\DecCSharp.exe
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\bin\Debug\net5.0\DecCSharp.deps.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\bin\Debug\net5.0\DecCSharp.runtimeconfig.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\bin\Debug\net5.0\DecCSharp.runtimeconfig.dev.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\bin\Debug\net5.0\DecCSharp.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\bin\Debug\net5.0\ref\DecCSharp.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\bin\Debug\net5.0\DecCSharp.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\obj\Debug\net5.0\DecCSharp.csproj.AssemblyReference.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\obj\Debug\net5.0\DecCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\obj\Debug\net5.0\DecCSharp.AssemblyInfoInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\obj\Debug\net5.0\DecCSharp.AssemblyInfo.cs
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\obj\Debug\net5.0\DecCSharp.csproj.CoreCompileInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\obj\Debug\net5.0\DecCSharp.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\obj\Debug\net5.0\ref\DecCSharp.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\obj\Debug\net5.0\DecCSharp.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\DecCSharp\obj\Debug\net5.0\DecCSharp.genruntimeconfig.cache

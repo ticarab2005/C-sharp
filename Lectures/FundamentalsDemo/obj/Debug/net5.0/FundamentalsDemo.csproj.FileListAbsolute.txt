@@ -1,0 +1,16 @@
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\bin\Debug\net5.0\FundamentalsDemo.exe
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\bin\Debug\net5.0\FundamentalsDemo.deps.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\bin\Debug\net5.0\FundamentalsDemo.runtimeconfig.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\bin\Debug\net5.0\FundamentalsDemo.runtimeconfig.dev.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\bin\Debug\net5.0\FundamentalsDemo.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\bin\Debug\net5.0\ref\FundamentalsDemo.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\bin\Debug\net5.0\FundamentalsDemo.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\obj\Debug\net5.0\FundamentalsDemo.csproj.AssemblyReference.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\obj\Debug\net5.0\FundamentalsDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\obj\Debug\net5.0\FundamentalsDemo.AssemblyInfoInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\obj\Debug\net5.0\FundamentalsDemo.AssemblyInfo.cs
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\obj\Debug\net5.0\FundamentalsDemo.csproj.CoreCompileInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\obj\Debug\net5.0\FundamentalsDemo.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\obj\Debug\net5.0\ref\FundamentalsDemo.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\obj\Debug\net5.0\FundamentalsDemo.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\FundamentalsDemo\obj\Debug\net5.0\FundamentalsDemo.genruntimeconfig.cache

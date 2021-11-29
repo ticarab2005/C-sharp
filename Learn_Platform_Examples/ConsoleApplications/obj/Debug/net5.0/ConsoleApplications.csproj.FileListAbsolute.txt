@@ -1,0 +1,16 @@
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\bin\Debug\net5.0\ConsoleApplications.exe
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\bin\Debug\net5.0\ConsoleApplications.deps.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\bin\Debug\net5.0\ConsoleApplications.runtimeconfig.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\bin\Debug\net5.0\ConsoleApplications.runtimeconfig.dev.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\bin\Debug\net5.0\ConsoleApplications.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\bin\Debug\net5.0\ref\ConsoleApplications.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\bin\Debug\net5.0\ConsoleApplications.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\obj\Debug\net5.0\ConsoleApplications.csproj.AssemblyReference.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\obj\Debug\net5.0\ConsoleApplications.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\obj\Debug\net5.0\ConsoleApplications.AssemblyInfoInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\obj\Debug\net5.0\ConsoleApplications.AssemblyInfo.cs
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\obj\Debug\net5.0\ConsoleApplications.csproj.CoreCompileInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\obj\Debug\net5.0\ConsoleApplications.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\obj\Debug\net5.0\ref\ConsoleApplications.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\obj\Debug\net5.0\ConsoleApplications.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\ConsoleApplications\obj\Debug\net5.0\ConsoleApplications.genruntimeconfig.cache

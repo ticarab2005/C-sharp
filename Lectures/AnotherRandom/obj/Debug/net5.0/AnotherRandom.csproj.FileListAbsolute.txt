@@ -1,0 +1,16 @@
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\bin\Debug\net5.0\AnotherRandom.exe
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\bin\Debug\net5.0\AnotherRandom.deps.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\bin\Debug\net5.0\AnotherRandom.runtimeconfig.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\bin\Debug\net5.0\AnotherRandom.runtimeconfig.dev.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\bin\Debug\net5.0\AnotherRandom.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\bin\Debug\net5.0\ref\AnotherRandom.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\bin\Debug\net5.0\AnotherRandom.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\obj\Debug\net5.0\AnotherRandom.csproj.AssemblyReference.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\obj\Debug\net5.0\AnotherRandom.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\obj\Debug\net5.0\AnotherRandom.AssemblyInfoInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\obj\Debug\net5.0\AnotherRandom.AssemblyInfo.cs
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\obj\Debug\net5.0\AnotherRandom.csproj.CoreCompileInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\obj\Debug\net5.0\AnotherRandom.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\obj\Debug\net5.0\ref\AnotherRandom.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\obj\Debug\net5.0\AnotherRandom.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\AnotherRandom\obj\Debug\net5.0\AnotherRandom.genruntimeconfig.cache
