@@ -12,9 +12,11 @@ namespace FundamentalsI
         {
             Console.WriteLine(i);
         }
-        for (int i = 1; i <= 100; i++)
+        for (var i = 1; i <= 100; i++)
         {
-            if(i % 3 == 0 || i % 5 == 0)
+            bool x = (i % 3 == 0 || i % 5 == 0);
+            bool y = !(i % 3 == 0 && i % 5== 0);
+            if (x && y)
         {
             Console.WriteLine(i);
         }
