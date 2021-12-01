@@ -10,5 +10,6 @@ namespace WizardNinjaSamurai
         {
             Steal = stl;
         }
+        
     }
 }

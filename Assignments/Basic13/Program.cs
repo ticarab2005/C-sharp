@@ -8,16 +8,16 @@ namespace Basic13
         static void Main(string[] args)
         {
             int[] nums = new int[] {1,2,3,4,5};
-            int[] maxArray = new int[] {-2,-3,-4,-1,-5};
-            int[] avg = new int[] {2,10,3};
+            // int[] maxArray = new int[] {-2,-3,-4,-1,-5};
+            // int[] avg = new int[] {2,10,3};
             // Console.WriteLine("Hello World!");
             // PrintNumbers();
             // PrintOdds();
             // PrintSum();
-            // LoopArray(nums);
+            LoopArray(nums);
             // FindMax(maxArray);
             // GetAverage(avg);
-            // OddArray();
+            OddArray();
             GreaterThanY(nums, 3);
         }
         public static void PrintNumbers()

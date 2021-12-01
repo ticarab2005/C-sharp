@@ -10,12 +10,16 @@ namespace WizardNinjaSamurai
             Human Hands = new Human("Tammy");
             Fist.Attack(Hands);
             Console.WriteLine($"{Fist.Name} damaged {Hands.Name} by {Hands.Health}");
-            Wizard Magic = new Wizard("Tyrience",3,25,3,50);
-            Magic.Attack(Fist);
-            Magic.Heal(Magic);
-            Console.WriteLine($"{Magic.Name} damaged {Fist.Name} Intelligence by {Fist.Health}");
             Ninja Vanish = new Ninja("MiMi",10,25,125,100);
+            Wizard Magic = new Wizard("Tyrience",3,25,3,50);
             Samurai Slice = new Samurai("Cara",3,25,3,200);
+            Magic.Attack(Vanish);
+            Console.WriteLine($"{Magic.Name} damaged {Vanish.Name}'s Intelligence while healing {Magic.Name} by {Vanish.Health}");
+            Magic.Attack(Vanish);
+            Console.WriteLine($"{Magic.Name} damaged {Vanish.Name}'s Intelligence while healing {Magic.Name} by {Vanish.Health}");
+            Slice.Attack(Magic);
+            Console.WriteLine($"{Slice.Name} attacked {Vanish.Name} damaging {Magic.Name} by {Vanish.Health}");
+
         }
     }
 }
