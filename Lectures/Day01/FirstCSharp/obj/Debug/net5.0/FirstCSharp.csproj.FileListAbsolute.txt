@@ -1,0 +1,16 @@
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\bin\Debug\net5.0\FirstCSharp.exe
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\bin\Debug\net5.0\FirstCSharp.deps.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\bin\Debug\net5.0\FirstCSharp.runtimeconfig.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\bin\Debug\net5.0\FirstCSharp.runtimeconfig.dev.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\bin\Debug\net5.0\FirstCSharp.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\bin\Debug\net5.0\ref\FirstCSharp.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\bin\Debug\net5.0\FirstCSharp.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\obj\Debug\net5.0\FirstCSharp.csproj.AssemblyReference.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\obj\Debug\net5.0\FirstCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\obj\Debug\net5.0\FirstCSharp.AssemblyInfoInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\obj\Debug\net5.0\FirstCSharp.AssemblyInfo.cs
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\obj\Debug\net5.0\FirstCSharp.csproj.CoreCompileInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\obj\Debug\net5.0\FirstCSharp.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\obj\Debug\net5.0\ref\FirstCSharp.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\obj\Debug\net5.0\FirstCSharp.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\Day01\FirstCSharp\obj\Debug\net5.0\FirstCSharp.genruntimeconfig.cache

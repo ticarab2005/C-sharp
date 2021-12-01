@@ -1,0 +1,13 @@
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\obj\Debug\netcoreapp3.1\ClassesDemo.csprojAssemblyReference.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\obj\Debug\netcoreapp3.1\ClassesDemo.AssemblyInfoInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\obj\Debug\netcoreapp3.1\ClassesDemo.AssemblyInfo.cs
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\obj\Debug\netcoreapp3.1\ClassesDemo.csproj.CoreCompileInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\bin\Debug\netcoreapp3.1\ClassesDemo.exe
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\bin\Debug\netcoreapp3.1\ClassesDemo.deps.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\bin\Debug\netcoreapp3.1\ClassesDemo.runtimeconfig.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\bin\Debug\netcoreapp3.1\ClassesDemo.runtimeconfig.dev.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\bin\Debug\netcoreapp3.1\ClassesDemo.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\bin\Debug\netcoreapp3.1\ClassesDemo.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\obj\Debug\netcoreapp3.1\ClassesDemo.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\obj\Debug\netcoreapp3.1\ClassesDemo.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDemo\obj\Debug\netcoreapp3.1\ClassesDemo.genruntimeconfig.cache

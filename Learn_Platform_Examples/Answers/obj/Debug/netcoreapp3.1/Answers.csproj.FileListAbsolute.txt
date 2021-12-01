@@ -1,0 +1,13 @@
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\bin\Debug\netcoreapp3.1\Answers.exe
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\bin\Debug\netcoreapp3.1\Answers.deps.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\bin\Debug\netcoreapp3.1\Answers.runtimeconfig.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\bin\Debug\netcoreapp3.1\Answers.runtimeconfig.dev.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\bin\Debug\netcoreapp3.1\Answers.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\bin\Debug\netcoreapp3.1\Answers.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\obj\Debug\netcoreapp3.1\Answers.csprojAssemblyReference.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\obj\Debug\netcoreapp3.1\Answers.AssemblyInfoInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\obj\Debug\netcoreapp3.1\Answers.AssemblyInfo.cs
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\obj\Debug\netcoreapp3.1\Answers.csproj.CoreCompileInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\obj\Debug\netcoreapp3.1\Answers.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\obj\Debug\netcoreapp3.1\Answers.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Learn_Platform_Examples\Answers\obj\Debug\netcoreapp3.1\Answers.genruntimeconfig.cache

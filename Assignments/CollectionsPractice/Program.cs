@@ -7,7 +7,7 @@ namespace CollectionsPractice
     {
         static void Main(string[] args)
         {
-            int[] numArray = new int[10] {0,1,2,3,4,5,6,7,8,9};
+            int[] numArray = new int[] {0,1,2,3,4,5,6,7,8,9};
             for(int i = 0; i < numArray.Length; i++)
             {
                 Console.WriteLine(numArray[i]);
@@ -17,30 +17,39 @@ namespace CollectionsPractice
             {
                 Console.WriteLine(strArray[i]);
             }
-            string[] arrayBool = new string[10] {$"true","false","true","false","true","false","true","false","true","false"};
-            for(int i = 0; i<arrayBool.Length; i++)
+
+            bool[] arrayBool = new bool[10]{true,false,true,false,true,false,true,false,true,false};
+            for(int i = 0; i < arrayBool.Length; i++)
             {
                 Console.WriteLine(arrayBool[i]);
             }
+        
             List<string> names = new List<string>();
             names.Add("Strawberry");
             names.Add("Mint");
-            names.Add("Vanilla");
             names.Add("Chocolate");
+            names.Add("Vanilla");
             names.Add("Sherbert");
             {
                 Console.WriteLine(String.Join(", ", names));
             }
-                Console.WriteLine(names[3]);
-            names.Remove("Chocolate");
+                Console.WriteLine($"Third Flavor: {names[2]}");
+            names.RemoveAt(2);
             {
                 Console.WriteLine(String.Join(", ", names));
             }
+            Random rand = new Random();
+            string[] name = new string[] {"Tim","Martin","Nikki","Sara"};
+            List<string> iceCream = new List<string>();
+            iceCream.Add("Strawberry");
+            iceCream.Add("Mint");
+            iceCream.Add("Vanilla");
+            iceCream.Add("Sherbert");
             Dictionary<string, string> myDictionary = new Dictionary<string, string>();
-            myDictionary.Add("Tim","Strawberry");
-            myDictionary.Add("Martin","Mint");
-            myDictionary.Add("Nikki","Vanilla");
-            myDictionary.Add("Sara","Sherbert");
+            for(int i=0; i < name.Length;i++)
+            {
+                myDictionary.Add(names[i], iceCream[rand.Next(iceCream.Count)]);
+            }
             foreach(KeyValuePair<string,string> val in myDictionary)
             {
                 Console.WriteLine(val.Key + " : " + val.Value );
