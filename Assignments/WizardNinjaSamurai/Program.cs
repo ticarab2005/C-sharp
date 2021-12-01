@@ -7,8 +7,14 @@ namespace WizardNinjaSamurai
         static void Main(string[] args)
         {
             Human Fist = new Human("Tasha");
+            Human Hands = new Human("Tammy");
+            Fist.Attack(Hands);
+            Console.WriteLine($"{Fist.Name} damaged {Hands.Name} by {Hands.Health}");
             Wizard Magic = new Wizard("Tyrience",3,25,3,50);
-            Ninja Vanish = new Ninja("MiMi",3,25,125,100);
+            Magic.Attack(Fist);
+            Magic.Heal(Magic);
+            Console.WriteLine($"{Magic.Name} damaged {Fist.Name} Intelligence by {Fist.Health}");
+            Ninja Vanish = new Ninja("MiMi",10,25,125,100);
             Samurai Slice = new Samurai("Cara",3,25,3,200);
         }
     }

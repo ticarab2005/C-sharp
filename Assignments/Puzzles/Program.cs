@@ -9,6 +9,7 @@ namespace Puzzles
         {
             RandomArray();
             Console.WriteLine(TossCoin());
+            Console.WriteLine(TossMultipleCoins(2));
             var result = Names();
         }
         public static int[] RandomArray()
@@ -41,19 +42,18 @@ namespace Puzzles
                 result = "Heads";
             else
                 result = "Tails";
-            Console.WriteLine($"Coin flipped: {result}");
+            Console.WriteLine($"Tossing a Coin!");
             return result;
         }
         public static double TossMultipleCoins(int num)
         {
             Random rand = new Random();
             int numHeads = 0;
-            for(var flip = 0; flip < num; flip++)
+            for(int flip = 0; flip < num; flip++)
             {
                 if(rand.Next(2) == 0)
-                numHeads++;
+                    numHeads++;
             }
-            Console.WriteLine($"Double flipped: {numHeads/num}");
             return (double)numHeads/num;
         }
         public static List<string> Names()

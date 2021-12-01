@@ -11,6 +11,7 @@ namespace HumanAssignment
             a.Attack(b);
             Console.WriteLine($"{a.Name} damaged {b.Name} by {b.Health}");
             
+            
         }
     }
 }
