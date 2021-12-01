@@ -9,7 +9,7 @@ namespace HumanAssignment
             Human a = new Human("Cara");
             Human b = new Human("Keila");
             a.Attack(b);
-            Console.WriteLine($"{a.Name} damage {b.Name} by {b.Health}");
+            Console.WriteLine($"{a.Name} damaged {b.Name} by {b.Health}");
             
         }
     }

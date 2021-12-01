@@ -9,13 +9,13 @@ namespace ClassesDemo
         {
             Animal a = new Animal("Lion", 4, 250.5, true,"yellow");
             // Console.WriteLine(a.species);
-            // a.ShowStats();
+            a.ShowStats();
             Animal b = new Animal("House cat",4,8.4,true,"white");
             // b.species = "Red panda";
-            // b.ShowStats();
-            // Console.WriteLine(b.Weight);
-            // b.feed();
-            // Console.WriteLine(b.Weight);
+            b.ShowStats();
+            Console.WriteLine(b.Weight);
+            b.feed();
+            Console.WriteLine(b.Weight);
             // Imagine you're playing a video game
             // Your character has a health amount and your enemy has a health amount
             // When you get hit, you take damage - your health goes down
@@ -27,7 +27,10 @@ namespace ClassesDemo
             Piccolo.ShowStats();
 
             Bird Kiwi = new Bird("Parrot",2,2.5,"green",true);
+
+            // We can hold a list of all things Animal
             List<Animal> allAnimals = new List<Animal>();
+            
             allAnimals.Add(a);
             allAnimals.Add(b);
             allAnimals.Add(Piccolo);

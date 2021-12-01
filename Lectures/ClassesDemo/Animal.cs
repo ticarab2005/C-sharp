@@ -25,9 +25,17 @@ namespace ClassesDemo
     public Animal(string sp, double wgt,string clr)
     {
         species = sp;
-        numLegs = 2;
+        numLegs = 4;
         weight = wgt;
         isMammal = true;
+        color = clr;
+    }
+    public Animal(string sp, double wgt, bool isMam, string clr)
+    {
+        species = sp;
+        numLegs = 2;
+        weight = wgt;
+        isMammal = isMam;
         color = clr;
     }
     public Animal(string sp, int legs, double wgt, string clr)

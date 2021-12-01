@@ -13,11 +13,12 @@ namespace ClassesDemo
             scaleTexture = scale;
             canRegrowLimb = regrow;
         }
-        // public override void ShowStats()
-        // {
-        //     Console.WriteLine($"Cold-Blooded:{isColdBlooded}");
-        //     Console.WriteLine($"Scale Texture:{scaleTexture}");
-        //     Console.WriteLine($"Regrow Limb:{canRegrowLimb}");
-        // }
+        public override void ShowStats()
+        {
+            base.ShowStats();
+            Console.WriteLine($"Cold-Blooded:{isColdBlooded}");
+            Console.WriteLine($"Scale Texture:{scaleTexture}");
+            Console.WriteLine($"Regrow Limb:{canRegrowLimb}");
+        }
     }
 }
