@@ -9,7 +9,7 @@ namespace Puzzles
         {
             RandomArray();
             Console.WriteLine(TossCoin());
-            Console.WriteLine(TossMultipleCoins(2));
+            Console.WriteLine(TossMultipleCoins(6));
             var result = Names();
         }
         public static int[] RandomArray()

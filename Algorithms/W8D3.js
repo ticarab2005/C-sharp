@@ -24,7 +24,7 @@ console.log(unSortArry([2,2,3,4,4,4]));
 
 function removeDuplicates(arr){
     for(i=0;i<arr.length;i++){
-        let num = arr[i];
+        var num = arr[i];
         for(j=i+i;j<arr.length;j++){
             if(arr[j]==num){
                 arr.splice(j,1);

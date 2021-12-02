@@ -7,8 +7,8 @@ namespace ClassesDay2Demo
         int mana {get;set;}
         void castSpell(string move)
         {
-            Console.WriteLine($"The person cast a spell!");
             mana -=10;
+            Console.WriteLine($"The person cast a spell!");
         }
     }
 }

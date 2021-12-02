@@ -1,0 +1,13 @@
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\bin\Debug\netcoreapp3.1\ClassesDay2Demo.exe
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\bin\Debug\netcoreapp3.1\ClassesDay2Demo.deps.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\bin\Debug\netcoreapp3.1\ClassesDay2Demo.runtimeconfig.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\bin\Debug\netcoreapp3.1\ClassesDay2Demo.runtimeconfig.dev.json
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\bin\Debug\netcoreapp3.1\ClassesDay2Demo.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\bin\Debug\netcoreapp3.1\ClassesDay2Demo.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\obj\Debug\netcoreapp3.1\ClassesDay2Demo.csprojAssemblyReference.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\obj\Debug\netcoreapp3.1\ClassesDay2Demo.AssemblyInfoInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\obj\Debug\netcoreapp3.1\ClassesDay2Demo.AssemblyInfo.cs
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\obj\Debug\netcoreapp3.1\ClassesDay2Demo.csproj.CoreCompileInputs.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\obj\Debug\netcoreapp3.1\ClassesDay2Demo.dll
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\obj\Debug\netcoreapp3.1\ClassesDay2Demo.pdb
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\ClassesDay2Demo\obj\Debug\netcoreapp3.1\ClassesDay2Demo.genruntimeconfig.cache
