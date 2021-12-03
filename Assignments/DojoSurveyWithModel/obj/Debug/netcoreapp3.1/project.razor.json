@@ -14402,11 +14402,6 @@
   "RootNamespace": "DojoSurveyWithModel",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\DojoSurveyWithModel\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\DojoSurveyWithModel\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -14414,6 +14409,11 @@
     {
       "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\DojoSurveyWithModel\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\DojoSurveyWithModel\\Views\\Home\\Results.cshtml",
+      "TargetPath": "Views\\Home\\Results.cshtml",
       "FileKind": "mvc"
     },
     {

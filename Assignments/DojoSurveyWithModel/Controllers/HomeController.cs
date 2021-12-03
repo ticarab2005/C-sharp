@@ -13,6 +13,8 @@ namespace DojoSurveyWithModel.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        static Dojo newDojo;
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -21,6 +23,19 @@ namespace DojoSurveyWithModel.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost("process")]
+        public IActionResult Process(Dojo myDojo)
+        {
+                newDojo = myDojo;
+            return RedirectToAction("Results");
+        }
+        
+        [HttpGet("results")]
+        public IActionResult Results()
+        {
+            return View(newDojo);
         }
 
         public IActionResult Privacy()

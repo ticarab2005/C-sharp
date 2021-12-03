@@ -1,0 +1,11 @@
+@model DojoSurveyWithModel.Models.Dojo;
+
+<h1>Results:</h1>
+    <div class="d-flex justify-content-center">
+    <div class="bg-dark text-light p-4 mt-5" style="width: 700px; height: 310px;">
+        <h1 class="text-primary">@Model.personName</h1>
+        <h5 class="p-2">Dojo Location: @Model.dojoLocation</h5>
+        <h5 class="p-2">Favorite Language: @Model.dojoLanguage</h5>
+        <h5 class="p-2 mb-5">Comments:@Model.personComment</h5>
+        <a class="p-2" href="/">Home</a>
+    </div>
