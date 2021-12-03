@@ -14402,13 +14402,13 @@
   "RootNamespace": "formsDemo",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Lectures\\formsDemo\\Views\\Forms\\index.cshtml",
-      "TargetPath": "Views\\Forms\\index.cshtml",
+      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Lectures\\formsDemo\\Views\\Form\\Index.cshtml",
+      "TargetPath": "Views\\Form\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Lectures\\formsDemo\\Views\\Forms\\Result.cshtml",
-      "TargetPath": "Views\\Forms\\Result.cshtml",
+      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Lectures\\formsDemo\\Views\\Form\\Result.cshtml",
+      "TargetPath": "Views\\Form\\Result.cshtml",
       "FileKind": "mvc"
     }
   ],

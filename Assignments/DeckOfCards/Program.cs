@@ -6,7 +6,7 @@ namespace DeckOfCards
     {
         static void Main(string[] args)
         {
-            string[] stringVals = new string[]  {"Ace","1","2","3","4","5","6","7","8","9","10","Jack","Queen","King"};
+    
             Deck oneCard = new Deck ();
             oneCard.Shuffle();
             for(int i=0;i<52;i++)
