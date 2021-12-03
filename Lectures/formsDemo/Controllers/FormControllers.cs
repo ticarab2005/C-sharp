@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace formsDemo.Controllers
 {
-    public class FirstController : Controller
+    public class FormController : Controller
     {
         public static string pName;
         public static string pType;
@@ -14,6 +14,7 @@ namespace formsDemo.Controllers
         {
             return View("Index");
         }
+        
         [HttpPost]
         [Route("process")]
         public IActionResult Process(string petName, string petType)

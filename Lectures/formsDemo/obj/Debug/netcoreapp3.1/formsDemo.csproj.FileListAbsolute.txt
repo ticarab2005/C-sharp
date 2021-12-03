@@ -19,7 +19,6 @@ C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\bin\Debug\netcor
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcoreapp3.1\formsDemo.TagHelpers.input.cache
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcoreapp3.1\formsDemo.TagHelpers.output.cache
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcoreapp3.1\formsDemo.RazorCoreGenerate.cache
-C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcoreapp3.1\Razor\Views\Forms\index.cshtml.g.cs
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcoreapp3.1\formsDemo.RazorTargetAssemblyInfo.cache
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcoreapp3.1\formsDemo.RazorTargetAssemblyInfo.cs
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcoreapp3.1\formsDemo.Views.pdb
@@ -29,3 +28,5 @@ C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcor
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcoreapp3.1\formsDemo.pdb
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcoreapp3.1\formsDemo.genruntimeconfig.cache
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcoreapp3.1\formsDemo.csproj.CopyComplete
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcoreapp3.1\Razor\Views\Form\Index.cshtml.g.cs
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\formsDemo\obj\Debug\netcoreapp3.1\Razor\Views\Form\Result.cshtml.g.cs
