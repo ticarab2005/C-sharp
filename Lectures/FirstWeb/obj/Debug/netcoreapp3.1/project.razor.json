@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Lectures\\FirstWeb1\\FirstWeb1.csproj",
+  "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Lectures\\FirstWeb\\FirstWeb1.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,13 +14402,13 @@
   "RootNamespace": "FirstWeb1",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Lectures\\FirstWeb1\\Views\\First\\Second.cshtml",
-      "TargetPath": "Views\\First\\Second.cshtml",
+      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Lectures\\FirstWeb\\Views\\First\\Index.cshtml",
+      "TargetPath": "Views\\First\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Lectures\\FirstWeb1\\Views\\First\\Index.cshtml",
-      "TargetPath": "Views\\First\\Index.cshtml",
+      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Lectures\\FirstWeb\\Views\\First\\Second.cshtml",
+      "TargetPath": "Views\\First\\Second.cshtml",
       "FileKind": "mvc"
     }
   ],

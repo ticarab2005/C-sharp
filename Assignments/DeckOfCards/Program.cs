@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace DeckOfCards
 {
@@ -7,11 +6,22 @@ namespace DeckOfCards
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string[] stringVals = new string[]  {"Ace","1","2","3","4","5","6","7","8","9","10","Jack","Queen","King"};
+            Deck oneCard = new Deck ();
+            oneCard.Shuffle();
+            for(int i=0;i<52;i++)
+            {
+                System.Console.Write("{0,-14}", oneCard.Deal());
+                if((i+1)%4 ==0)
+                    Console.WriteLine();
+            }
+            foreach(string c in Card)
+            {
+                Console.WriteLine(c);
+            }
             // Step one: Create a card class
             // Step two: Create a deck
             // string[] suits = new string[] {"Heart","Diamond","Spade","Club"};
-            string[] cardVals = new string[]  {"Ace","1","2","3","4","5","6","7","8","9","10","Jack","Queen","King"};
             // List<string[]> Deck = new List<string[]>(); 
         }
     }

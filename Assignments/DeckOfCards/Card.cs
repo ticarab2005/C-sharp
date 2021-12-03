@@ -6,7 +6,7 @@ namespace DeckOfCards
     {
         public string stringVal;
         public string suit;
-        public int val;
+        public int value;
         public static string[] Suits = new string[4] { "Heart", "Diamond", "Spade", "Club" };
 
         public Card(string s, int val)
