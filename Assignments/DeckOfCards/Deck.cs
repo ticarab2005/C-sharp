@@ -5,55 +5,62 @@ namespace DeckOfCards
 {
     public class Deck
     {
-        private List<Card> cards = new List<Card>();
-        public List<Card> Reset()
+    public string [] cardVal = new string[] {"Ace","2","3","4","5","6","7","8","9","10","Jack","Queen","King"};
+
+    public string[] suit = new string[]{"Clubs","Spades","Hearts","Diamonds"};
+
+    public List<Card> deck = new List<Card>();
+    public Deck()
+    {
+        Reset();
+    }
+
+        public void Reset()
         {
-            cards.Clear();
-            for(int i=0;i<4;i++)
+            deck.Clear();
+            for(int i = 0; i< cardVal.Length; i++)
+        {
+            for( int j = 0; j < suit.Length; j++)
             {
-                int j = 1;
-                while(j<14)
-                {
-                    cards.Add(new Card(Card.Suits[i],j));
-                    j++;
-                }
+                Card newCard = new Card(cardVal[i], suit[j], i+1);
+                deck.Add(newCard);
             }
-            return cards;
         }
-        public List<Card> Cards
-        {
-            get{return this.cards;}
-        }
-        public Deck()
-        {
-            Reset();
-        }
-        public void ShowDeck()
-        {
-            foreach(Card c in cards)
-            {
-                c.SayCard();
-            }
         }
         public Card Deal()
         {
-            Card oneCard = cards[0];
-            cards.RemoveAt(0);
-            return oneCard;
+            Console.WriteLine("Draws Card");
+            Card dealt = deck[0];
+            deck.Remove(dealt);
+            return dealt;
         }
         public void Shuffle()
         {
-            List<Card> cardstoshuffle = this.cards;
-            List<Card> shuffle = new List<Card>();
-            Random rand = new Random();
-            while(cardstoshuffle.Count > 0)
+            Console.WriteLine("Cara is shuffling the cards.");
+            List<Card> cards2shuffle = this.deck;
+            List<Card> shuffled = new List<Card>();
+            Random randy = new Random();
+            while(cards2shuffle.Count > 0)
             {
-                int x = rand.Next(0, cardstoshuffle.Count);
-                shuffle.Add(cardstoshuffle[x]);
-                cardstoshuffle.RemoveAt(x);
+                int idx = randy.Next(0, cards2shuffle.Count);
+                shuffled.Add(cards2shuffle[idx]);
+                cards2shuffle.RemoveAt(idx);
             }
-            this.cards = shuffle;
+            this.deck = shuffled;
+        // public void Shuffle()
+        // {
+        //     Random rand = new Random ();
+        //     int index = 0;
+        //     while (index < deck.Count)
+        //     {
+        //         Card temp = deck[index];
+        //         int newIndex = rand.Next(0,deck.Count);
+        //         deck[index] = deck[newIndex];
+        //         deck[newIndex] = temp;
+        //         index++;
+            // }
         }
+
 
     }
 }

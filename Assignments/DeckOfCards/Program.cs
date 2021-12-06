@@ -6,19 +6,23 @@ namespace DeckOfCards
     {
         static void Main(string[] args)
         {
-            string[] suits = new string[] {"Heart", "Diamond", "Spade", "Club"};
-            string[] cardVals = new string[] {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
-            Deck oneCard = new Deck ();
-            oneCard.Shuffle();
-            for(int i=0;i<52;i++)
-            {
-                System.Console.Write("{0,-14}", oneCard.Deal());
-                if((i+1)%4 ==0)
-                    Console.WriteLine();
-            }
-            foreach(string c in Card)
-            {
-                Console.WriteLine(c);
+            Player Cara = new Player("Cara");
+            Deck oneDeck = new Deck();
+            oneDeck.Shuffle();
+            Cara.Draw(oneDeck,5);
+            Cara.Discard(1);
+
+            
+            // oneCard.Shuffle();
+            // for(int i=0;i<52;i++)
+            // {
+            //     System.Console.Write("{0,-14}", oneCard.Deal());
+            //     if((i+1)%4 ==0)
+            //         Console.WriteLine();
+            // }
+            // foreach(string c in Card)
+            // {
+            //     Console.WriteLine(c);
             }
             // for(int i = 0; i < stringVal.Length; i++)
             // {
@@ -30,17 +34,17 @@ namespace DeckOfCards
             //     }
             // }
 
-            foreach(string d in Deck)
-            {
-                Console.WriteLine(d);
-            }
+        //     foreach(string d in Deck)
+        //     {
+        //         Console.WriteLine(d);
+        //     }
             
-            Console.WriteLine(heart);
-            // Step one: Create a card class
-            // Step two: Create a deck
-            // string[] suits = new string[] {"Heart","Diamond","Spade","Club"};
-            // List<string[]> Deck = new List<string[]>(); 
-        }
+        //     Console.WriteLine(heart);
+        //     // Step one: Create a card class
+        //     // Step two: Create a deck
+        //     // string[] suits = new string[] {"Heart","Diamond","Spade","Club"};
+        //     // List<string[]> Deck = new List<string[]>(); 
+        // }
     }
 }
 

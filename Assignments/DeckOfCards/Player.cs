@@ -5,36 +5,39 @@ namespace DeckOfCards
 {
     public class Player
     {
-        private string name;
-        private List<Card> hand;
+        public string Name;
+        public List<Card> Hand;
         public Player(string name)
         {
-            this.name = name;
-            hand = new List<Card>();
+            Name = name;
+            Hand = new List<Card>();
         }
-        public string Name
+        public Card Draw(Deck dk, int num)
         {
-            get{return name;}
-        }
-        public Card Draw(Deck dl)
-        {
-            Card oneCard = dl.Deal();
-            hand.Add(oneCard);
+            System.Console.WriteLine($"{Name} deals {num} cards");
+            Card oneCard = null;
+            for (int i=0;i<=num;i++)
+            {
+            oneCard = dk.Deal();
+            Hand.Add(oneCard);
+            Console.WriteLine($"{Name} draws a {oneCard.cardVal} of {oneCard.suit}. She added it to her hand.");
+            }
             return oneCard;
         }
-        public Card Discard(int x)
+        public Card Discard(int index)
         {
-            Card oneCard;
-            if(x<hand.Count)
-            {
-                oneCard = hand[x];
-                hand.RemoveAt(x);
-                return oneCard;
-            }
-            else
+            if (index > Hand.Count -1 )
             {
                 return null;
+            } 
+            else
+            {
+                Card discardPile= Hand[index];
+                Hand.Remove(discardPile);
+                Console.WriteLine($"Cara puts down the {discardPile.cardVal} of {discardPile.suit} from her hand, winning the game!");
+                return discardPile;
             }
         }
+
     }
 }
