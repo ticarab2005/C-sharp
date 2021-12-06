@@ -13,6 +13,8 @@ namespace DojoSurveyWithValidation.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        static Dojo newDojo;
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -23,9 +25,24 @@ namespace DojoSurveyWithValidation.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost("process")]
+        public IActionResult Process(Dojo myDojo)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                newDojo = myDojo;
+                return RedirectToAction("Results");
+            }
+            else
+            {
+                return View("Index");
+            }
+        }
+
+        [HttpGet("results")]
+        public IActionResult Results()
+        {
+            return View(newDojo);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

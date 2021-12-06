@@ -14417,6 +14417,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\DojoSurveyWithValidation\\Views\\Home\\Results.cshtml",
+      "TargetPath": "Views\\Home\\Results.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\DojoSurveyWithValidation\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -14424,11 +14429,6 @@
     {
       "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\DojoSurveyWithValidation\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\DojoSurveyWithValidation\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
