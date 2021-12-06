@@ -34,7 +34,7 @@ namespace DeckOfCards
             {
                 Card discardPile= Hand[index];
                 Hand.Remove(discardPile);
-                Console.WriteLine($"Cara puts down the {discardPile.cardVal} of {discardPile.suit} from her hand, winning the game!");
+                Console.WriteLine($"Cara puts down the {discardPile.cardVal} of {discardPile.suit} from her hand, beating the opponent's card!");
                 return discardPile;
             }
         }

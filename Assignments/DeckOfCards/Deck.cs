@@ -47,18 +47,6 @@ namespace DeckOfCards
                 cards2shuffle.RemoveAt(idx);
             }
             this.deck = shuffled;
-        // public void Shuffle()
-        // {
-        //     Random rand = new Random ();
-        //     int index = 0;
-        //     while (index < deck.Count)
-        //     {
-        //         Card temp = deck[index];
-        //         int newIndex = rand.Next(0,deck.Count);
-        //         deck[index] = deck[newIndex];
-        //         deck[newIndex] = temp;
-        //         index++;
-            // }
         }
 
 
