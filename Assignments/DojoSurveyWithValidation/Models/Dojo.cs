@@ -11,24 +11,25 @@ namespace DojoSurveyWithValidation.Models
 
         [Required(ErrorMessage ="You must pick a location!")]
         public string dojoLocation {get;set;}
-        [Required(ErrorMessage ="Language is required!")]
+        
+        [Required(ErrorMessage ="You must pick a language!")]
         // [Display(Language ="Your Name")]
         public string dojoLanguage {get;set;}
-        [MinLength(20,ErrorMessage ="Comment isn't required, but if provided, must contain more than 20 characters!")]
+        [MinLength(20,ErrorMessage ="Must contain more than 20 characters!")]
         // [Display(Name ="Your Name")]
         public string personComment {get;set;}
     }
 }
 
-namespace DojoSurveyWithValidation
-{
-    public enum dojoLanguage
-    {
-        None,
-        HTML,
-        CSS, 
-        JavaScript,
-        Python,
-        CSharp
-    }
-}
+// namespace DojoSurveyWithValidation
+// {
+//     public enum dojoLanguage
+//     {
+//         None,
+//         HTML,
+//         CSS, 
+//         JavaScript,
+//         Python,
+//         CSharp
+//     }
+// }

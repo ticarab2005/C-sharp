@@ -5,41 +5,41 @@
             <form class="bg-dark text-light p-3" action="/process" method="POST">
                 <h1 class="space text-warning mt-4 pb-2">Dojo Survey</h1>
                 <div class="mb-3">
-                    <label asp-for="personName" class="form-label space">Name: </label>
+                    <label for="personName" class="form-label space">Name: </label>
                     <input asp-for="personName" class="form space">
-                    <span asp-validation-for="personName" class="text-danger"></span>
+                    <span asp-validation-for="personName" class="text-danger p-5"></span>
                 </div>
                 <div class="mb-3">
                     <label for="dojoLocation" class="form-label space">Dojo Location: </label><br>
                     <select asp-for="dojoLocation" class="form space" aria-label="Default select example">
-                        <option selected>--Select A Location--</option>
+                        <option selected value=>--Select A Location--</option>
                         <option>Chicago</option>
                         <option>Seattle</option>
                         <option>Online</option>
                         <option>Burbank</option>
                         <option>Bellevue</option>
                     </select>
-                    <span asp-validation-for="dojoLocation" class="text-danger"></span>
+                    <span asp-validation-for="dojoLocation" class="text-danger p-5"></span>
                 </div>
                 <div class="mb-3">
                     <label for="dojoLanguage" class="form-label space">Favorite Language: </label><br>
-                    <select asp-for="dojoLanguage" class="form space" aria-label="Default select example" asp-items="@HTML.GetEnumSelectList<dojoLanguage>()"></select>">
-                        <option selected>--Select A Language--</option>
+                    <select asp-for="dojoLanguage" class="form space" aria-label="Default select example">
+                        <option selected value=>--Select A Language--</option>
                         <option>HTML</option>
                         <option>CSS</option>
                         <option>JavaScript</option>
                         <option>Python</option>
                         <option>C#</option>
                     </select>
-                    <span asp-validation-for="dojoLanguage" class="text-danger"></span>
+                    <span asp-validation-for="dojoLanguage" class="text-danger p-5"></span>
                 </div>
                 <div class="space">
                     <label name="personComment" class="mb-2" for="a_short_description_of_myself">Comment: (optional)</label><br>
                 </div>
                     <textarea name="personComment"class="box space" name="comment" id="a_short_description_of_myself"></textarea>
+                    <span asp-validation-for="personComment" class="text-danger p-5"></span>
                     <br><br>
                     <input type="submit" value="SUBMIT" class="btn mb-5 btn-warning btn-outline-dark space">
-                    <span asp-validation-for="personComment" class="text-danger"></span>
             </form>
         </div>
     </div>
