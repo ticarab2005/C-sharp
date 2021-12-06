@@ -5,9 +5,9 @@ namespace DeckOfCards
     public class Card
     {
         public string stringVal;
-        public string suit;
+        public string Suits;
         public int value;
-        public static string[] Suits = new string[4] { "Heart", "Diamond", "Spade", "Club" };
+        public static string[] suits = new string[4] { "Heart", "Diamond", "Spade", "Club" };
 
         public Card(string s, int val)
         {
@@ -29,7 +29,7 @@ namespace DeckOfCards
                 stringVal = val.ToString();
                 break;
             }
-            suit = s;
+            Suits = s;
             value = val;
         }
         public void SayCard()

@@ -5,7 +5,7 @@ namespace DojoSurveyWithValidation.Models
 {
     public class Dojo
     {
-        [Required(ErrorMessage = "Your Name must contain more than 2")]
+        [Required(ErrorMessage = "Please enter your name!")]
         [MinLength(2,ErrorMessage ="Name must contain more than 2 characters!")]
         public string personName {get;set;}
 

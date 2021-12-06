@@ -6,7 +6,8 @@ namespace DeckOfCards
     {
         static void Main(string[] args)
         {
-    
+            string[] suits = new string[] {"Heart", "Diamond", "Spade", "Club"};
+            string[] cardVals = new string[] {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
             Deck oneCard = new Deck ();
             oneCard.Shuffle();
             for(int i=0;i<52;i++)
@@ -19,6 +20,22 @@ namespace DeckOfCards
             {
                 Console.WriteLine(c);
             }
+            // for(int i = 0; i < stringVal.Length; i++)
+            // {
+            //     for(int j = 0; j < suits.Length; j++)
+            //     {
+            //         // add Cards to the list
+            //         string ourCard = stringVal[i] + suits[j] + (i + 1).ToString();
+            //         Deck.Add(ourCard);
+            //     }
+            // }
+
+            foreach(string d in Deck)
+            {
+                Console.WriteLine(d);
+            }
+            
+            Console.WriteLine(heart);
             // Step one: Create a card class
             // Step two: Create a deck
             // string[] suits = new string[] {"Heart","Diamond","Spade","Club"};
