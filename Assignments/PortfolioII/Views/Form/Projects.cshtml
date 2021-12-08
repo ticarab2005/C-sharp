@@ -25,107 +25,24 @@
         </div>
     </nav>
     <br><br>
-    <h2 class="text-center text-primary">Here are some Projects</h2>
-    <pre><code>public partial class Form1 : Form
-{
-    public Form1()
-    {
-        InitializeComponent();
-    }
-
-    private void Form1_Load(object sender, EventArgs e)
-    {
-        Deck.FillDeck();
-        Deck.PrintDeck();
-    }
-}
-
-class Card
-{
-    public int Value;
-    public static string[] SuitsArray = new string[] {"Hearts", "Diamonds", "Clubs", "Spades"};
-    public string Suit;
-
-    public Card(int value, string suit)
-    {
-        Value = value;
-        Suit = suit;
-    }
-
-    public Card(string input)
-    {
-        string tempValue = "";
-        string suitSentence = "";
-        switch (Value)
-        {
-            case 11:
-                tempValue = "Jack";
-                break;
-            case 12:
-                tempValue = "Queen";
-                break;
-            case 13:
-                tempValue = "King";
-                break;
-            case 14:
-                tempValue = "Ace";
-                break;
-            default:
-                tempValue = Value.ToString();
-                break;
-        }
-        switch (Suit)
-        {
-            case "Hearts":
-                suitSentence = " of Hearts";
-                break;
-            case "Diamonds":
-                suitSentence = " of Diamonds";
-                break;
-            case "Clubs":
-                suitSentence = " of Clubs";
-                break;
-            case "Spades":
-                suitSentence = " of Spades";
-                break;
-        }
-        input = tempValue + suitSentence;
-    }
-}
-
-class Deck
-{
-    public static Object[] deck = new Object[52];
-
-
-    public static void FillDeck()
-    {
-        int index = 0;
-        foreach (string suit in Card.SuitsArray)
-        {
-            for (int value = 2; value &lt;= 14; value++)
-            {
-                Card card = new Card(value, suit);
-                deck[index] = card;
-                index++;
-            }
-        }
-    }
-
-    public static void PrintDeck()
-    {
-        for (int i=0; i&lt;52; i++)
-        {
-            System.Diagnostics.Debug.WriteLine(deck[i]);
-        }
-    }
-}
-</code></pre>
-    @* <select class="form-select" multiple aria-label="multiple select example">
-        <option selected>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-    </select>    *@
+    <h2 class="text-center text-primary">Here are some of my Projects</h2>
+    <div class="d-flex justify-content-around">
+            <form class="col-4 bg-light p-4 my-4 text-dark" >
+                <h2 class="text-center text-primary">New Dojo</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" class="form-control">
+                </div>
+                <input type="submit" value="Add Dojo" class="btn btn-primary btn-outline-dark">
+            </form>
+            <form class="col-4 bg-dark text-light text-center my-5 p-4">
+                <h2 class="text-primary">All Dojos</h2>
+                {% for d in all_dojos %}
+                <p> 
+                    <a href="/dojo/{{d.id}}" class="text-warning">{{d.name}}</a>
+                </p>
+                {% endfor %}
+            </form>
+        </div>
 </body>
 </html>

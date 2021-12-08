@@ -14402,8 +14402,8 @@
   "RootNamespace": "PortfolioII",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\PortfolioII\\Views\\Form\\contact.cshtml",
-      "TargetPath": "Views\\Form\\contact.cshtml",
+      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\PortfolioII\\Views\\Form\\Contact.cshtml",
+      "TargetPath": "Views\\Form\\Contact.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14412,8 +14412,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\PortfolioII\\Views\\Form\\projects.cshtml",
-      "TargetPath": "Views\\Form\\projects.cshtml",
+      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\PortfolioII\\Views\\Form\\Projects.cshtml",
+      "TargetPath": "Views\\Form\\Projects.cshtml",
       "FileKind": "mvc"
     }
   ],

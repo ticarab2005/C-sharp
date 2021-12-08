@@ -20,16 +20,3 @@ namespace DojoSurveyWithValidation.Models
         public string personComment {get;set;}
     }
 }
-
-// namespace DojoSurveyWithValidation
-// {
-//     public enum dojoLanguage
-//     {
-//         None,
-//         HTML,
-//         CSS, 
-//         JavaScript,
-//         Python,
-//         CSharp
-//     }
-// }
