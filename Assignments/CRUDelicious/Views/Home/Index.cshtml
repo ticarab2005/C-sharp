@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Dish
+
+<h1 class="text-center">Welcome to CRUDelicious!!!</h1>
+<br><br>
+    <div class="d-flex justify-content-between">
+        <h4>Check out some recent dishes!</h4>
+        <div class="d-inline-block fs-5 pe-lg-5">
+            <a href="/new">Add a Dish</a>
+        </div>
+    </div>
+
+<table class="table table-striped">
+        <tbody>
+    @{
+            foreach(Dish d in ViewBag.AllDishes)
+            {
+            <tr>
+                <td><a href="/show/@d.DishId">@d.Name</a> by @d.Chef</td>
+            </tr>
+            }
+    }
+</table>
+
+        </tbody>

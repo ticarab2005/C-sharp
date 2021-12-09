@@ -69,23 +69,23 @@ class SinglyLinkedList {
     }
 }
 
-reverse(); {
-    var currentNode = this.head;
-    var nextNode = this.head.next;
-    var prevNode = null;
-    if (!this.head || this.head.next == null) {
-        return this.head;
-    }
+// reverse(); {
+//     var currentNode = this.head;
+//     var nextNode = this.head.next;
+//     var prevNode = null;
+//     if (!this.head || this.head.next == null) {
+//         return this.head;
+//     }
 
 
-    while (currentNode) {
-        nextNode = currentNode.next;
-        currentNode.next = prevNode;
-        prevNode = currentNode;
-        currentNode = nextNode;
-    }
-    this.head = prevNode;
-}
+//     while (currentNode) {
+//         nextNode = currentNode.next;
+//         currentNode.next = prevNode;
+//         prevNode = currentNode;
+//         currentNode = nextNode;
+//     }
+//     this.head = prevNode;
+// }
 
 var new_sll = new SinglyLinkedList();
 new_sll.addToBack("Disneyland");
