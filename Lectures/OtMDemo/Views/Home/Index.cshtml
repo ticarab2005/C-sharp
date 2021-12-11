@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+<h1>Roster</h1>
+<div class="row">
+    <div class="col-6">
+        <
+    </div>
+    <div class="col-6">
+        <h2>All Teachers</h2>
+        @{
+            foreach(Teacher t in ViewBag.AllTeachers)
+            {
+                <h4>Instructors @t.TeacherId</h4>
+            }
+        }
+    </div>
+</div>
+</div>

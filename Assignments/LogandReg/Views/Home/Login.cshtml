@@ -1,0 +1,21 @@
+@model LoginUser
+
+<div class="d-flex justify-content-between">
+    <h2 class="text-warning reg">Login to this Cool Site</h2>
+    <a class="p-2" href="/">Register</a>
+</div>
+<form action="/log" method="post" class="col-6">
+    <div class="form-group mt-2">
+        <label for="logEmail">Email:</label>
+        <input asp-for="logEmail" class="form-control">
+        <span asp-validation-for="logEmail" class="text-danger"></span>       
+    </div>
+    <div class="form-group mt-2">
+        <label for="logPassword">Password:</label>
+        <input asp-for="logPassword" class="form-control">
+        <span asp-validation-for="logPassword" class="text-danger"></span>
+    </div>
+    <br>
+    <input type="submit" value="Login" class="btn btn-success">
+    </div>
+</form>
