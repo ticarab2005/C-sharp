@@ -69,10 +69,10 @@ namespace LogandReg.Controllers
                 PasswordVerificationResult result = Hasher.VerifyHashedPassword(logUser,userInDb.Password,logUser.logPassword);
                 if(result == 0)
                 {
-                ModelState.AddModelError("logEmail","Invalid login attempt!");
-                return View("Login");
+                    ModelState.AddModelError("logEmail","Invalid login attempt!");
+                    return View("Login");
                 }
-                HttpContext.Session.SetInt32("LoggedIn",userInDb.UserId);
+                HttpContext.Session.SetInt32("UserId",userInDb.UserId);
                 return RedirectToAction("Success");
             }else{
                 return View("Login");
@@ -82,23 +82,23 @@ namespace LogandReg.Controllers
         [HttpGet("success")]
         public IActionResult Success()
         {
-            int? loggedIn = HttpContext.Session.GetInt32("LoggedIn");
-                if (loggedIn !=null)
+            if(HttpContext.Session.GetInt32("UserId") == null)
                 {
-                return RedirectToAction("Register");
+                    ModelState.AddModelError("UserId","Not signed in!");
+                    return RedirectToAction("Login");
                 }
             return View("Success");
         }
 
         [HttpGet("logout")]
-        public IActionResult Logout()
+        public RedirectToActionResult Logout()
         {
             HttpContext.Session.Clear();
-            return View("Index");
+            return RedirectToAction("Login");
         }
         public IActionResult Privacy()
         {
-            return View();
+            return View("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

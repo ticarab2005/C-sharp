@@ -84,3 +84,9 @@ body {
 .reg {
     padding-left: 14px;
 }
+
+.dojo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
