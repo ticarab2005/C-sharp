@@ -83,11 +83,11 @@ namespace LogandReg.Controllers
         public IActionResult Success()
         {
             int? loggedIn = HttpContext.Session.GetInt32("LoggedIn");
-            if (loggedIn !=null)
-            {
-            return View("Sucess");
-            }
-            return View("Index");
+                if (loggedIn !=null)
+                {
+                return RedirectToAction("Register");
+                }
+            return View("Success");
         }
 
         [HttpGet("logout")]
