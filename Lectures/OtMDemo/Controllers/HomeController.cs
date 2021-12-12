@@ -21,7 +21,7 @@ namespace OtMDemo.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.allStudent = _context.Teachers.ToList();
+            ViewBag.allTeachers = _context.Teachers.ToList();
             return View();
         }
 
@@ -33,26 +33,26 @@ namespace OtMDemo.Controllers
             {
                 _context.Add(newTeacher);
                 _context.SaveChanges();
-                return RedirectToAction();
-            }else{
-                ViewBag.allStudent = _context.Teachers.ToList();
-                return View("Index");
-            }
-        }
-        [HttpPost("addTeacher")]
-
-        public IActionResult addStudent(Teacher newStudent)
-        {
-            if(ModelState.IsValid)
-            {
-                _context.Add(newStudent);
-                _context.SaveChanges();
                 return RedirectToAction("Index");
             }else{
-                ViewBag.allStudent = _context.Teachers.ToList();
+                // ViewBag.allStudent = _context.Teachers.ToList();
                 return View("Index");
             }
         }
+        // [HttpPost("addTeacher")]
+
+        // public IActionResult addStudent(Teacher newStudent)
+        // {
+        //     if(ModelState.IsValid)
+        //     {
+        //         _context.Add(newStudent);
+        //         _context.SaveChanges();
+        //         return RedirectToAction("Index");
+        //     }else{
+        //         ViewBag.allStudent = _context.Teachers.ToList();
+        //         return View("Index");
+        //     }
+        // }
 
         public IActionResult Privacy()
         {

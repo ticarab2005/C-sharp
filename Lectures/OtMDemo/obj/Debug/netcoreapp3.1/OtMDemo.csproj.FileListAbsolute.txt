@@ -58,3 +58,5 @@ C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\OtMDemo\obj\Debug\netcorea
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\OtMDemo\obj\Debug\netcoreapp3.1\OtMDemo.dll
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\OtMDemo\obj\Debug\netcoreapp3.1\OtMDemo.pdb
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\OtMDemo\obj\Debug\netcoreapp3.1\OtMDemo.genruntimeconfig.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\OtMDemo\obj\Debug\netcoreapp3.1\Razor\Views\Home\_StudentForm.cshtml.g.cs
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Lectures\OtMDemo\obj\Debug\netcoreapp3.1\Razor\Views\Home\_TeacherForm.cshtml.g.cs

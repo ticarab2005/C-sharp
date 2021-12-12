@@ -1,6 +1,6 @@
 @model Student
 
-<h2>Add a Teacher</h2>
+<h2>Add a Student</h2>
 <form action="addStudent" method="post">
     <div class="form-group">
         <label for="Name">Name</label>
@@ -9,8 +9,7 @@
     </div>
     <div class="form-group">
         <label for="TeacherId">Teacher</label>
-        <input asp-for="TeacherId" class="form-control">
-        <select asp-for="TeacherId" id="">
+        <select asp-for="TeacherId" class="form-control">
             @{
             foreach(Teacher t in ViewBag.AllTeachers)
             {
@@ -20,11 +19,11 @@
         </select>
         <span asp-validation-for="TeacherId" class="text-danger"></span>
     </div>
-    <div class="form-group">
+    @* <div class="form-group">
         <label for="Course">Course</label>
         <input asp-for="Course" class="form-control">
         <span asp-validation-for="Course" class="text-danger"></span>
-    </div>
+    </div> *@
     <div class="form-group">
         <input type="submit" value="Add" class="btn btn-primary">
     </div>
