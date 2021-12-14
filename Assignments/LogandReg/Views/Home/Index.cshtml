@@ -4,45 +4,45 @@
 
 @model User
 
-            <div class="d-flex justify-content-between">
-                <h2 class="text-warning reg">Register to this Cool Site</h2>
-                <a class="p-2" href="/login">Login</a>
-            </div>
-            <br>
-        <form action="register" method="post">
-        <div class="d-flex justify-content-evenly">
-            <div class="col-6">
-                <div class="form-group">
-                    <label for="FirstName">First Name:</label>
-                    <input asp-for="FirstName" class="form-control mt-2" style="Width: 250px;">
-                    <span asp-validation-for="FirstName" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label for="LastName">Last Name:</label>
-                    <input asp-for="LastName" class="form-control" style="Width: 250px;">
-                    <span asp-validation-for="LastName" class="text-danger"></span>
-                </div>
-                <div class="form-group">
-                    <label for="Email">Email:</label>
-                    <input asp-for="Email" class="form-control" style="Width: 250px;">
-                    <span asp-validation-for="Email" class="text-danger"></span>
-                </div>
-            </div>
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="Password">Password:</label>
-                        <input asp-for="Password" class="form-control" style="Width: 250px;">
-                        <span asp-validation-for="Password" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="Confirm">Confirm Password:</label>
-                        <input asp-for="Confirm" class="form-control" style="Width: 250px;">
-                        <span asp-validation-for="Confirm" class="text-danger"></span>
-                    </div>
-                </div>
+<div class="d-flex justify-content-between">
+    <h2 class="text-warning reg">Register to this Cool Site</h2>
+    <a class="p-2" href="/login">Login</a>
+</div>
+<br>
+<form action="register" method="post">
+<div class="d-flex justify-content-evenly">
+    <div class="col-6">
+        <div class="form-group">
+            <label for="FirstName">First Name:</label>
+            <input asp-for="FirstName" class="form-control mt-2" style="Width: 250px;">
+            <span asp-validation-for="FirstName" class="text-danger"></span>
         </div>
-            <br>
-            <input type="submit" value="Register" class="btn btn-warning">
-        </form>
+        <div class="form-group">
+            <label for="LastName">Last Name:</label>
+            <input asp-for="LastName" class="form-control" style="Width: 250px;">
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="Email">Email:</label>
+            <input asp-for="Email" class="form-control" style="Width: 250px;">
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+    </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label for="Password">Password:</label>
+                <input asp-for="Password" class="form-control" style="Width: 250px;">
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="Confirm">Confirm Password:</label>
+                <input asp-for="Confirm" class="form-control" style="Width: 250px;">
+                <span asp-validation-for="Confirm" class="text-danger"></span>
+            </div>
+        </div>
+</div>
+    <br>
+    <input type="submit" value="Register" class="btn btn-warning">
+</form>
 </div>
 

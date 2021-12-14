@@ -3,48 +3,44 @@
 <h1 class="text-center">Add a new Dish!</h1>
 <a class="p-2" href="/">Home</a>
 <form class="pt-5" action="createDish" method="post">
-    <div id="features" class="flexed align-items-start pt-5">
-            <div class="feature form-group">
-                <label>Chef's Name</label>
-                <input asp-for="Chef" class="form-control">
-                <span asp-validation-for="Chef" class="text-danger"></span>
+    <div class="flexed align-items-start pt-5">
+        <div class="feature form-group">
+            <label>Chef's Name</label>
+            <input asp-for="Chef" class="form-control">
+            <span asp-validation-for="Chef" class="text-danger"></span>
+            <div class="feature-description form-group">
+                <label>Name of Dish</label>
+                <input asp-for="Name" class="form-control" style="Width: 300px;">
+                <span asp-validation-for="Name" class="text-danger"></span>
                 <div class="feature-description form-group">
-                    <label>Name of Dish</label>
-                    <input asp-for="Name" class="form-control" style="Width: 300px;">
-                    <span asp-validation-for="Name" class="text-danger"></span>
-                    <div class="feature-description form-group">
-                        <label># of Calories</label>
-                        <input asp-for="Calories" class="form-control">
-                        <span asp-validation-for="Calories" class="text-danger"></span>
-                    </div>
+                    <label># of Calories</label>
+                    <input asp-for="Calories" class="form-control">
+                    <span asp-validation-for="Calories" class="text-danger"></span>
                 </div>
             </div>
-            
-            <div class="feature pt-3">
-                <label for="Tastiness" class="form-label space">Tastiness</label>
-                <select asp-for="Tastiness" class="form-select" type="numbers" aria-label="Default select example">
-                    <option selected value=></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
+        </div>
+        <div class="pt-3">
+            <label for="Tastiness" class="form-label space">Tastiness</label>
+            <select asp-for="Tastiness" class="form-select" type="numbers" aria-label="Default select example">
+                <option selected value=>Rate Tastiness</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <span asp-validation-for="Tastiness" class="text-danger p-5"></span>
+        </div>
+        <div>
+            <div class="space">
+                <label name="Description" class="mb-2" for="a_short_description_of_myself">Description</label><br>
+            </div>
+                <textarea asp-for="Description" style="Width: 250px; Height: 100px;" class="box space overflow-auto"id="a_short_description_of_myself"></textarea>
                 <br>
-                <span asp-validation-for="Tastiness" class="text-danger p-5"></span>
-            </div>
-        
-        <div class="feature">
-            <div class="feature-description">
-                <div class="space">
-                    <label name="Description" class="mb-2" for="a_short_description_of_myself">Description</label><br>
-                </div>
-                    <textarea asp-for="Description" style="Width: 250px; Height: 100px;" class="box space overflow-auto"id="a_short_description_of_myself"></textarea>
-                    <br>
-                    <span asp-validation-for="Description" class="text-danger p-5"></span>
-                    <br><br>
-                    <input type="submit" value="SUBMIT" class="btn mb-5 btn-warning btn-outline-dark space">
-                    </div>
+                <span asp-validation-for="Description" class="text-danger p-5"></span>
+                <br><br>
+                <input type="submit" value="SUBMIT" class="btn mb-5 btn-warning btn-outline-dark space">
                 </div>
             </div>
         </div>

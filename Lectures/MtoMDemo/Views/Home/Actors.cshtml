@@ -1,0 +1,26 @@
+@model Actor
+
+<h2>Add a Actor</h2>
+<form action="addActor" method="post">
+    <div class="form-group">
+        <label for="FirstName">First Name</label>
+        <input asp-for="FirstName" class="form-control">
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="LastName">Last Name</label>
+        <input asp-for="LastName" class="form-control">
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+    <div class="col-4">
+            @{
+            foreach(Actor a in ViewBag.allActors)
+            {
+                <h4><a href="/actor/@a.ActorId"></a>@a.FirstName @a.LastName</h4>
+            }
+        }
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Add Actor" class="btn btn-primary">
+    </div>
+</form>

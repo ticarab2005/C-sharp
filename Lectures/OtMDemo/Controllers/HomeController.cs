@@ -12,21 +12,24 @@ namespace OtMDemo.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ILogger<HomeController> _logger;
         private MyContext _context;
-        // here we can "inject" our context service into the constructor
-        public HomeController(MyContext context)
+
+        public HomeController(ILogger<HomeController> logger, MyContext context)
         {
+            _logger = logger;
             _context = context;
         }
 
         public IActionResult Index()
         {
-            ViewBag.allTeachers = _context.Teachers.ToList();
+            // Old call:
+            // ViewBag.AllTeachers = _context.Teachers.ToList();
+            ViewBag.AllTeachers = _context.Teachers.Include(a => a.MyStudents).ToList();
             return View();
         }
 
         [HttpPost("addTeacher")]
-
         public IActionResult addTeacher(Teacher newTeacher)
         {
             if(ModelState.IsValid)
@@ -34,26 +37,25 @@ namespace OtMDemo.Controllers
                 _context.Add(newTeacher);
                 _context.SaveChanges();
                 return RedirectToAction("Index");
-            }else{
-                // ViewBag.allStudent = _context.Teachers.ToList();
+            } else {
+                ViewBag.AllTeachers = _context.Teachers.Include(a => a.MyStudents).ToList();
                 return View("Index");
             }
         }
-        // [HttpPost("addTeacher")]
 
-        // public IActionResult addStudent(Teacher newStudent)
-        // {
-        //     if(ModelState.IsValid)
-        //     {
-        //         _context.Add(newStudent);
-        //         _context.SaveChanges();
-        //         return RedirectToAction("Index");
-        //     }else{
-        //         ViewBag.allStudent = _context.Teachers.ToList();
-        //         return View("Index");
-        //     }
-        // }
-
+        [HttpPost("addStudent")]
+        public IActionResult addStudent(Student newStudent)
+        {
+            if(ModelState.IsValid)
+            {
+                _context.Add(newStudent);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            } else {
+                ViewBag.AllTeachers = _context.Teachers.Include(a => a.MyStudents).ToList();
+                return View("Index");
+            }
+        }
         public IActionResult Privacy()
         {
             return View();
