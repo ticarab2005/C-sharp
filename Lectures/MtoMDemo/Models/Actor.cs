@@ -8,12 +8,16 @@ namespace MtoMDemo.Models
     {
         [Key]
         public int ActorId {get;set;}
+        
         [Required]
         public string FirstName {get;set;}
+        
         [Required]
         public string LastName {get;set;}
-        public DateTime CreateAt {get;set;} = DateTime.Now;
+
+        public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
-        public List<Cast> CastList { get; set; }
+
+        public List<Cast> ActedIn {get;set;}
     }
 }

@@ -8,14 +8,18 @@ namespace MtoMDemo.Models
     {
         [Key]
         public int MovieId {get;set;}
+
         [Required]
         public string Title {get;set;}
+
         [Required]
         public string Genre {get;set;}
+
         [Required]
         public int ReleaseYear {get;set;}
-        public DateTime CreateAt {get;set;} = DateTime.Now;
+
+        public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
-        public List<Cast> CastList { get; set; }
+        public List<Cast> CastList {get;set;}
     }
 }

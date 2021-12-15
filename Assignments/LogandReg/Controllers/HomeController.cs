@@ -72,7 +72,7 @@ namespace LogandReg.Controllers
                     ModelState.AddModelError("logEmail","Invalid login attempt!");
                     return View("Login");
                 }
-                HttpContext.Session.SetInt32("UserId",userInDb.UserId);
+                HttpContext.Session.SetInt32("User",userInDb.UserId);
                 return RedirectToAction("Success");
             }else{
                 return View("Login");
@@ -82,19 +82,19 @@ namespace LogandReg.Controllers
         [HttpGet("success")]
         public IActionResult Success()
         {
-            if(HttpContext.Session.GetInt32("UserId") == null)
+            if(HttpContext.Session.GetInt32("User") == null)
                 {
-                    ModelState.AddModelError("UserId","Not signed in!");
+                    ModelState.AddModelError("User","Not signed in!");
                     return RedirectToAction("Login");
                 }
             return View("Success");
         }
 
         [HttpGet("logout")]
-        public RedirectToActionResult Logout()
+        public IActionResult Logout()
         {
             HttpContext.Session.Clear();
-            return RedirectToAction("Login");
+            return View("Login");
         }
         public IActionResult Privacy()
         {
