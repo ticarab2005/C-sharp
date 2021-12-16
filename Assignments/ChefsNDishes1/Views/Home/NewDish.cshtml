@@ -21,21 +21,21 @@
                 <br><br>
                 <input type="submit" value="SUBMIT" class="btn mb-5 btn-warning btn-outline-dark space">
             </div>
-            </div>
-            <div class="space feature">
-                <label for="ChefId" class="form-label row">Chef</label>
-                <select asp-for="ChefId" class="form-select">
-                    <option selected value=""></option>
-                    @{
-                    foreach(Chef c in ViewBag.allChefs)
-                        {
-                            <option value="@c.ChefId">@c.FirstName @c.LastName</option>
-                        }
+        </div>
+        <div class="space feature">
+            <label for="ChefId" class="form-label row">Chef</label>
+            <select asp-for="ChefId" class="form-select">
+                <option selected value=""></option>
+                @{
+                foreach(Chef c in ViewBag.allChefs)
+                    {
+                        <option value="@c.ChefId">@c.FirstName @c.LastName</option>
                     }
-                </select>
-            <br>
-            <span asp-validation-for="ChefId" class="text-danger"></span>
-            </div>
+                }
+            </select>
+        <br>
+        <span asp-validation-for="ChefId" class="text-danger"></span>
+        </div>
         <div>
             <div class="pt-3">
             <label for="Tastiness" class="form-label row ms-3">Tastiness</label>

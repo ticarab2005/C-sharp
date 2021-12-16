@@ -1,8 +1,52 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model Product
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h1 class="display-5 pt-3 text-center">Products | <a href="categories">Categories</a></h1>
+<br>
+<div class="d-flex justify-content-between">
+    <div class="col-6 me-auto p-2 bd-highlight">
+        <h2 class="px-5 text-warning">New Product</h2>
+        <br><br>
+        <form action="createProduct" method="post">
+            <div class="mb-3 row">
+                <label class="box">Name</label>
+                <input asp-for="Name" class="form-control" style="Width: 200px;">
+            </div>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            <br><br>
+            <div class="mb-3 row">
+                <label class="flex" name="Description" for="a_short_description_of_myself">Description</label><br>
+                <input asp-for="Description" class="form-control" style="Width: 200px;">
+                <br>
+            </div>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            <br><br>
+            <div class="mb-3 row">
+                <label class="box">Price</label>
+                    <input asp-for="Price" type="number" class="form-control" style="Width: 200px;">
+            </div>
+                    <span asp-validation-for="Price" class="text-danger"></span>
+            <br>
+            <div class="right">
+                <input type="submit" value="SUBMIT" class="btn mb-5 btn-warning btn-outline-dark space">
+            </div>
+        </form>
+    </div>
+    <div class="p-2 bd-highlight">
+        <h2 class="px-5 text-warning">Existing Products</h2>
+        <table class="table">
+            <tbody>
+            @{
+                foreach(Product p in ViewBag.allProducts)
+                {
+                    <tr>
+                        <td><a href="/product/@p.ProductId">@p.Name</a></td>
+                    </tr>
+                }
+            }
+            </tbody>
+        </table>
+    </div> 
 </div>

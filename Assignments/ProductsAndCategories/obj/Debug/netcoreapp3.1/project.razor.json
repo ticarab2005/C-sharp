@@ -14417,6 +14417,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\ProductsAndCategories\\Views\\Home\\Product.cshtml",
+      "TargetPath": "Views\\Home\\Product.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\ProductsAndCategories\\Views\\Home\\Category.cshtml",
+      "TargetPath": "Views\\Home\\Category.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\ProductsAndCategories\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
@@ -14427,11 +14437,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\ProductsAndCategories\\Views\\Home\\Products.cshtml",
-      "TargetPath": "Views\\Home\\Products.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\ProductsAndCategories\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -14439,6 +14444,11 @@
     {
       "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\ProductsAndCategories\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\finet\\OneDrive\\Documents\\C#\\C-sharp\\Assignments\\ProductsAndCategories\\Views\\Home\\Categories.cshtml",
+      "TargetPath": "Views\\Home\\Categories.cshtml",
       "FileKind": "mvc"
     }
   ],

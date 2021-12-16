@@ -13,15 +13,15 @@
     </div>
 
 <table class="table table-striped">
-        <tbody>
+    <tbody>
     @{
-            foreach(Dish d in ViewBag.AllDishes)
-            {
+        foreach(Dish d in ViewBag.AllDishes)
+        {
             <tr>
                 <td><a href="/show/@d.DishId">@d.Name</a> by @d.Chef</td>
             </tr>
-            }
+        }
     }
-</table>
 
-        </tbody>
+    </tbody>
+</table>

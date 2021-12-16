@@ -1,0 +1,39 @@
+@model Category
+
+<h1 class="display-4 text-center">@Model.Name</h1>
+<br>
+<a href="/categories">Categories</a>
+<br>
+<div class="d-flex justify-content-between">
+    <div class="col-6 me-auto p-2 bd-highlight">
+        <h2 class="px-5 text-warning">Products:</h2>
+        <br>
+        @{
+            foreach(Association a in Model.AssociatedAt)
+            {
+                <h3>@a.Product.Name</h3>
+            }
+        }
+    </div>
+    <div class="p-2 bd-highlight">
+        <h2 class="px-5 text-warning">Add Products:</h2>
+        <br>
+        <form action="/addProduct" method="post">
+        <input type="hidden" name="CategoryId" value="@Model.CategoryId">
+            <select name="ProductId" class="form-select">
+                <option selected value=""></option>
+                @{
+                foreach(Product p in ViewBag.allProducts)
+                    {
+                    if(!Model.AssociatedAt.Any(s => s.ProductId == p.ProductId))
+                        {
+                            <option value="@p.ProductId">@p.Name</option>
+                        }
+                    }
+                }
+            </select>
+        <br><br><br>    
+            <input type="submit" value="Add" class="btn btn-warning btn-outline-dark button">
+        </form>
+    </div> 
+</div>

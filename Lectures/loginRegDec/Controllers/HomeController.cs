@@ -30,6 +30,11 @@ namespace loginRegDec.Controllers
         [HttpPost("register")]
         public IActionResult Register(User newUser)
         {
+            // First, I need to find the user in my database using their email
+            // If nothing shows up, they have the wrong credentials
+            // If something shows up, it's time to check the password
+            // If the password is wrong, kick them back
+            // if the password is right, let them through
             if(ModelState.IsValid)
             {
                 // Validate that the given email isn't already in the database to prevent any future issues with duplicate accounts

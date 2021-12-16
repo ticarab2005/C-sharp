@@ -80,44 +80,84 @@ class BST {
             return runner.value;
         }
     }
-}
 
-// Contains
-// Given a value to search for, return true if the value IS found in the binary search tree and false if it is not
-
-// Size
-// Return how many values are inside a binary search tree
-
-// Binary Search Tree
-
-    contains(newVal); {
-        // First, check if it's empty
+    contains(val) {
         if (this.isEmpty()) {
-            this.root = node;
+            return false;
         } else {
             let runner = this.root;
-            while (true) {
-                // check if the value is smaller
-                if (this.runner.value > newVal) {
-                    // Need to check if there is null to the left
-                    if (this.runner.left == null) {
-                        this.runner.left = node;
-                        return this;
-                    }
-                    // We need to go to the left
-                    runner = runner.left;
-                } else {
-                    // runner is SMALLER than our value
-                    // Need to check if there is null to the right
-                    if (this.runner.right == null) {
-                        this.runner.right = node;
-                        return this;
-                    }
-                    // we need to go to the right
+            while (runner) {
+                if (val > runner.value) {
                     runner = runner.right;
+                } else if (val < runner.value) {
+                    runner = runner.left;
+                } else if (runner.value == val) {
+                    return true;
                 }
+            }
+            return false;
+        }
+    }
+
+
+    // BST Height
+    // Write a function for your BST that returns how tall (the length of the longest running branch) your tree is
+
+    // BST isBalanced
+    // Write a function for your BST that returns true or false whether the tree is balanced, meaning the height of the left side of the tree is equal to or one branch height different from the right side
+
+    findHeight(node = this.root) {
+        if (node == null)
+            return -1;
+        else {
+            var leftDepth = this.findHeight(node.left);
+            var rightDepth = this.findHeight(node.right);
+
+            if (leftDepth > rightDepth) {
+                return (leftDepth + 1);
+            } else {
+                return (rightDepth + 1);
             }
         }
     }
-    return num;
+    isBalanced(node = this.root) {
+        if (!node) {
+            return true;
+        }
+
+        if (Math.abs(this.height(node.left) - this.height(node.right)) > 1) {
+            return false;
+        }
+
+        return this.isBalanced(node.left) && this.isBalanced(node.right);
+    }
+
+    isFull(node = this.root) {
+        if (node == null) {
+            return false;
+        } else if (node.left == null && node.right == null) {
+            return true;
+        } else if (node.left != null && node.right != null) {
+            return this.isFull(node.left) && this.isFull(node.right);
+        } else {
+            return false;
+        }
+    }
 }
+
+var newtree = new BST();
+
+newtree.add(2);
+newtree.add(1);
+newtree.add(5);
+// tree.add(4);
+// tree.add(5);
+// tree.add(6);
+console.log(newtree.contains(2));
+console.log(newtree.contains(5));
+console.log(newtree.contains(8));
+console.log(newtree.contains(1));
+console.log(newtree.contains(7));
+// console.log(newtree.size());
+// console.log(newtree.height());
+console.log(newtree.isFull());

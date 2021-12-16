@@ -58,3 +58,6 @@ C:\Users\finet\OneDrive\Documents\C#\C-sharp\Assignments\ProductsAndCategories\o
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Assignments\ProductsAndCategories\obj\Debug\netcoreapp3.1\ProductsAndCategories.dll
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Assignments\ProductsAndCategories\obj\Debug\netcoreapp3.1\ProductsAndCategories.pdb
 C:\Users\finet\OneDrive\Documents\C#\C-sharp\Assignments\ProductsAndCategories\obj\Debug\netcoreapp3.1\ProductsAndCategories.genruntimeconfig.cache
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Assignments\ProductsAndCategories\obj\Debug\netcoreapp3.1\Razor\Views\Home\Categories.cshtml.g.cs
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Assignments\ProductsAndCategories\obj\Debug\netcoreapp3.1\Razor\Views\Home\Product.cshtml.g.cs
+C:\Users\finet\OneDrive\Documents\C#\C-sharp\Assignments\ProductsAndCategories\obj\Debug\netcoreapp3.1\Razor\Views\Home\Category.cshtml.g.cs

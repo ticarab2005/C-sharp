@@ -1,0 +1,41 @@
+@model Product
+
+<h1 class="display-4 text-center">@Model.Name</h1>
+<br>
+<h3 class="text-center">@Model.Description</h3>
+<h3 class="text-center">$@Model.Price.ToString("0.00")</h3>
+<br>
+<a href="/">Products</a>
+<div class="d-flex justify-content-between">
+    <div class="col-6 me-auto p-2 bd-highlight">
+        <h2 class="px-5 text-warning">Category:</h2>
+        <br>
+        @{
+            foreach(Association a in Model.AssociationList)
+            {
+                <h3>@a.Category.Name</h3>
+            }
+        }
+    </div>
+    <div class="p-2 bd-highlight">
+        <h2 class="px-5 text-warning">Add Category:</h2>
+        <br>
+        <form action="/addCategory" method="post">
+        <input type="hidden" name="ProductId" value="@Model.ProductId">
+            <select name="CategoryId" class="form-select">
+                <option selected value=""></option>
+                @{
+                foreach(Category c in ViewBag.allCategories)
+                    {
+                    if(!Model.AssociationList.Any(s => s.CategoryId == c.CategoryId))
+                        {
+                            <option value="@c.CategoryId">@c.Name</option>
+                        }
+                    }
+                }
+            </select>
+        <br><br><br>    
+            <input type="submit" value="Add" class="btn btn-warning btn-outline-dark button">
+        </form>
+    </div> 
+</div>

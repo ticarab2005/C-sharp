@@ -59,19 +59,24 @@ namespace LogandReg.Controllers
         {
             if(ModelState.IsValid)
             {
+                // First, I need to find the user in my database using their email
                 User userInDb = _context.Users.FirstOrDefault(u => u.Email == logUser.logEmail);
+            // If nothing shows up, they have the wrong credentials
                 if(userInDb == null)
                 {
                     ModelState.AddModelError("logEmail","Invalid login attempt!");
                     return View("Login");
                 }
+            // If something shows up, it's time to check the password
                 PasswordHasher<LoginUser> Hasher = new PasswordHasher<LoginUser>();
                 PasswordVerificationResult result = Hasher.VerifyHashedPassword(logUser,userInDb.Password,logUser.logPassword);
                 if(result == 0)
                 {
+            // If the password is wrong, kick them back
                     ModelState.AddModelError("logEmail","Invalid login attempt!");
                     return View("Login");
                 }
+            // if the password is right, let them through
                 HttpContext.Session.SetInt32("User",userInDb.UserId);
                 return RedirectToAction("Success");
             }else{
