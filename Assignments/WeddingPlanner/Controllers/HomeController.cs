@@ -188,20 +188,6 @@ namespace WeddingPlanner.Controllers
             return RedirectToAction("Dashboard");
         }
 
-        // [HttpGet("delete/{weddingId}/{userId}")]
-        // public IActionResult DeleteReservation(int weddingId, int userId)
-        // {
-        //     Wedding reservationToDelete = _context.Weddings.SingleOrDefault(c => c.WeddingId == weddingId);
-        //     // if (HttpContext.Session.GetInt32("loggedInUser") != reservationToDelete.UserId)
-        //     // {
-        //     //     return RedirectToAction("Logout");
-        //     // }else{
-        //     _context.Weddings.Remove(reservationToDelete);
-        //     _context.SaveChanges();
-        //     return RedirectToAction("Dashboard");
-        //     // }
-        // }
-
         [HttpGet("logout")]
         public IActionResult Logout()
         {
