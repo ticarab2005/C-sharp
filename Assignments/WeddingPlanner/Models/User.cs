@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
 namespace WeddingPlanner.Models
 {
@@ -25,7 +26,9 @@ namespace WeddingPlanner.Models
         public string Password { get; set; }
         public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
-    
+        public List<Wedding> WeddingsMade {get;set;}
+        public List<RSVP> RSVPList {get;set;}
+
         [NotMapped]
         [DataType(DataType.Password)]
         [Compare("Password")]

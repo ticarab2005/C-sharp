@@ -1,0 +1,37 @@
+@model Wedding
+@using Microsoft.AspNetCore.Http
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="d-flex justify-content-between align-items-center">
+    <h1 class="text-primary"><span class="text-success">~</span> @Model.WedderOne and @Model.WedderTwo's Wedding! <span class="text-success">~</span></h1>  
+    <br>
+    <h1></h1>
+    <div class="me-auto p-2 bd-highlight">
+        <a href="/Dashboard">Dashboard</a>
+        <a class="fs-5 px-3" asp-action="logout">Log Out</a>
+    </div>
+</div>
+<br>
+<h3>Date: @Model.Date.ToString("MMMM dd, yyyy")</h3>
+<h3>Address: @Model.Address</h3>
+<h3>Guest:</h3>
+<br>
+<div class="col-6">
+    @{
+        foreach(RSVP u in Model.RSVPAt)
+        {
+            <ul>
+                @u.User.FirstName @u.User.LastName
+            </ul>
+        }
+    }
+    @{
+    if(Model.UserId == Context.Session.GetInt32("LoggedInUser"))
+        {
+            <a href="/delete/w.WeddingId">Delete</a>
+        }
+    }
+</div>

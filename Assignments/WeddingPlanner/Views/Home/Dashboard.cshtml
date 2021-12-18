@@ -1,0 +1,54 @@
+@using System.Collections.Generic;
+@model List<RSVP>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="d-flex justify-content-between align-items-center">
+        <h1 class="text-primary"><span class="text-success">~</span> Welcome to the Wedding Planner @ViewBag.LoggedInUser.FirstName <span class="text-success">~</span></h1>
+        <a class="fs-5" asp-action="logout">Logout</a>
+</div>
+<br>    
+<table class="table text-center">
+        <thead>
+            <tr>
+                <th>Wedding</th>
+                <th>Date</th>
+                <th>Guest</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>    
+        @{
+            foreach(Wedding w in ViewBag.allWeddings)
+            {
+                <tr>
+                    <td><a href="/show/@w.WeddingId">@w.WedderOne & @w.WedderTwo</a></td>
+                    <td>@w.Date.ToString("MMMM dd, yyyy")</td>
+                    <td>@w.RSVPAt.Count</td>
+                    <td>
+                        
+                    @{
+                        if(w.UserId == ViewBag.LoggedInUser.UserId)
+                            {
+                                <a href="/delete/@w.WeddingId">Delete</a>
+                            } else {
+                                if(w.RSVPAt.Any(f=>f.UserId == ViewBag.LoggedInUser.UserId))
+                                {   
+                                <a href="/UnRSVP/@w.WeddingId/@ViewBag.LoggedInUser.UserId">UnRSVP</a>
+                                }else{
+
+                                <a href="/RSVP/@w.WeddingId/@ViewBag.LoggedInUser.UserId">RSVP</a>
+                                }
+                            }
+                        }
+                </tr>
+                }
+            }
+                    </td>
+    </tbody>
+</table>
+<div class="d-flex justify-content-end">
+    <a href="new" class="btn btn-warning rounded btn-outline-dark">New Wedding</a>
+</div>

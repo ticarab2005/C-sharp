@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WeddingPlanner.Models
 {
-    public class LoginUser
+    public class LogUser
     {
         [Required]
         [EmailAddress]

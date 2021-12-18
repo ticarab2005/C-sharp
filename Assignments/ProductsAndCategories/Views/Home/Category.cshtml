@@ -21,13 +21,12 @@
         <form action="/addProduct" method="post">
         <input type="hidden" name="CategoryId" value="@Model.CategoryId">
             <select name="ProductId" class="form-select">
-                <option selected value=""></option>
                 @{
                 foreach(Product p in ViewBag.allProducts)
                     {
                     if(!Model.AssociatedAt.Any(s => s.ProductId == p.ProductId))
                         {
-                            <option value="@p.ProductId">@p.Name</option>
+                            <option selected value="@p.ProductId">@p.Name</option>
                         }
                     }
                 }

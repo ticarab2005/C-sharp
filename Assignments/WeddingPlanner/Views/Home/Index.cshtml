@@ -2,7 +2,49 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@model User
+
+<div class="d-flex justify-content-between">
+    <div class="col-6 me-auto p-2 bd-highlight">
+        <h1 class="display-5 px-5">Register</h1>
+        <br><br>
+        <form action="register" method="post">
+            <div class="mb-3 row">
+                <label for="FirstName" class="box">First Name: </label>
+                <input asp-for="FirstName" class="form-control" style="Width: 200px;">
+            </div>
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            <br>
+            <div class="mb-3 row">
+                <label for="LastName" class="box">Last Name: </label>
+                <input asp-for="LastName" class="form-control" style="Width: 200px;">
+            </div>
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            <br>
+            <div class="mb-3 row">
+                <label for="Email" class="flex">Email: </label>
+                <input asp-for="Email" class="form-control" style="Width: 200px;">
+            </div>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            <br>
+            <div class="mb-3 row">
+                <label for="Password" class="align">Password</label>
+                <input asp-for="Password" class="form-control" style="Width: 200px;">
+            </div>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            <br>
+            <div class="mb-3 row">
+                <label for="Confirm" class="pw">PW Confirm</label>
+                <input asp-for="Confirm" class="form-control" style="Width: 200px;">
+            </div>
+                <span asp-validation-for="Confirm" class="text-danger"></span>
+            <br>
+            <div class="right">
+                <input type="submit" value="Register" class="btn mb-5 btn-warning btn-outline-dark space">
+            </div>
+        </form>
+    </div>
+    <div class="p-2 bd-highlight">
+        <partial name="_Login" />
+    </div> 
 </div>

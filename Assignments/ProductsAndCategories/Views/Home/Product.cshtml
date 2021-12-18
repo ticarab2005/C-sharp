@@ -29,7 +29,7 @@
                     {
                     if(!Model.AssociationList.Any(s => s.CategoryId == c.CategoryId))
                         {
-                            <option value="@c.CategoryId">@c.Name</option>
+                            <option selected value="@c.CategoryId">@c.Name</option>
                         }
                     }
                 }
