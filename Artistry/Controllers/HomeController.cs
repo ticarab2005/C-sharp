@@ -21,16 +21,6 @@ namespace Artistry.Controllers
 
         private MyContext _context;
 
-        protected void Upload(object sender, EventArgs e)
-{
-    if (FileUpload1.HasFile)
-    {
-        string fileName = Path.GetFileName(FileUpload1.PostedFile.FileName);
-        FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Images/") + fileName);
-        Response.Redirect(Request.Url.AbsoluteUri);
-    }
-}
-
         public HomeController(ILogger<HomeController> logger, MyContext context)
         {
             _logger = logger;
