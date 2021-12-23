@@ -1,0 +1,38 @@
+<partial name="_Navbar.cshtml" />
+<h1>Welcome, @ViewBag.loggedInUser.FirstName</h1>
+
+<div class="d-flex ">
+    @{
+        foreach(Post p in ViewBag.AllPost)
+        {
+            <div class="card m-2" style="width: 18rem;">
+                <a href="/post/@p.PostId"><img src="@p.URL" class="card-img-top" alt="Pet"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Posted by: @p.Poster.FirstName @p.Poster.LastName</h5>
+                    <h6>@p.LikedBy.Count Like(s)</h6>
+                    <p class="card-text">@p.Description</p>
+                    @{
+                        if(p.UserId == ViewBag.LoggedInUser.UserId)
+                        {
+                            <a href="/delete/@p.PostId" class="btn btn-danger">Delete</a>
+                            <a href="/edit/@p.PostId" class="btn btn-info">Edit</a>
+                            if(p.LikedBy.Any(f=>f.UserId == ViewBag.LoggedInUser.UserId))
+                            {
+                            <a href="/unlike/@p.PostId/@ViewBag.loggedInUser.UserId" class="btn btn-primary">UnLike</a>
+                            } else {
+                                <a href="/like/@p.PostId/@ViewBag.loggedInUser.UserId" class="btn btn-primary">Like</a>
+                            }
+                        } else {
+                            if(p.LikedBy.Any(f=>f.UserId == ViewBag.LoggedInUser.UserId))
+                            {
+                            <a href="/unlike/@p.PostId/@ViewBag.loggedInUser.UserId" class="btn btn-primary">UnLike</a>
+                            } else {
+                                <a href="/like/@p.PostId/@ViewBag.loggedInUser.UserId" class="btn btn-primary">Like</a>
+                            }
+                        }
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>

@@ -2,19 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace WeddingPlanner.Models
+namespace Artistry.Models
 {
-    public class Wedding
+    public class Artist
     {
         [Key]
-        public int WeddingId {get;set;}
+        public int ArtistId {get;set;}
         
         [Required]
-        [Display(Name ="Wedder One")]
-        public string WedderOne {get;set;}
-        [Display(Name ="Wedder Two")]
-        [Required]
-        public string WedderTwo {get;set;}
+        [Display(Name ="Artist name")]
+        public string Name {get;set;}
         [DataType(DataType.Date)]
         public DateTime Date {get;set;}
         [Required]
@@ -25,6 +22,6 @@ namespace WeddingPlanner.Models
         public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
 
-        public List<RSVP> RSVPAt {get;set;}
+        public List<Skill> difSkill {get;set;}
     }
 }

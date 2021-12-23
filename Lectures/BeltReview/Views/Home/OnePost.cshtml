@@ -1,0 +1,28 @@
+<partial name="_Navbar.cshtml" />
+<h1>One Pet</h1>
+@model Post
+
+<img src="@Model.URL" alt="post" style="width: 22rem;">
+<h3>Posted by: @Model.Poster.FirstName @Model.Poster.LastName</h3>
+<h4>@Model.Description</h4>
+<h6>@Model.LikedBy.Count like(s)</h6>
+@{
+    if(Model.UserId == ViewBag.LoggedInUser.UserId)
+    {
+        <a href="/delete/@Model.PostId" class="btn btn-danger">Delete</a>
+        <a href="/edit/@Model.PostId" class="btn btn-info">Edit</a>
+        if(Model.LikedBy.Any(f=>f.UserId == ViewBag.LoggedInUser.UserId))
+        {
+        <a href="/unlike/@Model.PostId/@ViewBag.loggedInUser.UserId" class="btn btn-primary">UnLike</a>
+        } else {
+            <a href="/like/@Model.PostId/@ViewBag.loggedInUser.UserId" class="btn btn-primary">Like</a>
+        }
+    } else {
+        if(Model.LikedBy.Any(f=>f.UserId == ViewBag.LoggedInUser.UserId))
+        {
+        <a href="/unlike/@Model.PostId/@ViewBag.loggedInUser.UserId" class="btn btn-primary">UnLike</a>
+        } else {
+            <a href="/like/@Model.PostId/@ViewBag.loggedInUser.UserId" class="btn btn-primary">Like</a>
+        }
+    }
+}
