@@ -1,0 +1,43 @@
+<partial name="_Navbar.cshtml" />
+<br>
+<div class="d-flex justify-content-around">
+    <div class="col-4 bg-light p-4 my-5 text-dark">
+        <h2 class="text-center text-primary">Community News</h2>
+        <p class="text-dark size">
+            Welcome to the art community! Please post your artwork for all to see! Enjoy the love and support of your
+            fellow artist! We're supportive group! So please be positive with constructive criticism and your work,
+            thank you!</p>
+    </div>
+    <div class="col-4 bg-light p-4 my-5 text-dark">
+        <h2 class="text-success text-center">Welcome @ViewBag.loggedInUser.UserId!</h2>
+        <div class="d-flex justify-content-center align-items-center text-center">
+            <a class="fs-5 pe-lg-5" href="/portfolio">My Portfolio</a>
+            <a class="fs-5 p-2" href="/new">Add Artwork</a>
+            <a class="fs-5 pe-lg-5" href="/logout">Logout</a>
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-around">
+        <div class="col-4 bg-light p-4 my-5 text-dark">
+        </div>
+    <h2 class="text-center text-primary">Featured Works</h2>
+    <div class="row">
+        <div class="flex-2">
+            <div class="box definition">
+                <div class="left">
+                    <img src="http://www.theotaku.com/submissions/temporary/fanart/6440-20031001212240.jpg">
+                    <br>
+                    <h2 class="text-success text-center">Trigun</h2>
+                    <p class="text-dark">Cara Baby</p>
+                </div>
+            </div>
+        </div>
+        <div class="box definition">
+            <div class="left">
+                <img src="http://www.theotaku.com/submissions/temporary/fanart/6440-20031012103841.jpg">
+                <h2 class="text-success text-center">Dragon Ball Z</h2>
+                <p class="text-dark">Cara Baby</p>
+            </div>
+        </div>
+    </div>
+    </div>

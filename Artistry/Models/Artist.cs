@@ -10,13 +10,13 @@ namespace Artistry.Models
         public int ArtistId {get;set;}
         
         [Required]
-        [Display(Name ="Artist name")]
-        public string Name {get;set;}
+        public string title {get;set;}
+        [Required]
+        public string Technique {get;set;}
         [DataType(DataType.Date)]
         public DateTime Date {get;set;}
         [Required]
-        [Display(Name ="Address")]
-        public string Address{get;set;}
+        public string Description {get;set;}
         public int UserId {get;set;}
         public User myUser {get;set;}
         public DateTime CreatedAt {get;set;} = DateTime.Now;

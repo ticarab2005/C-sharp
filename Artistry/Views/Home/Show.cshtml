@@ -1,0 +1,28 @@
+<partial name="_Navbar.cshtml" />
+<h1>Artwork</h1>
+@model Artist
+
+<img src="@Model.Technique" alt="post" style="width: 22rem;">
+<h3>@Model.title </h3>
+<h4>@Model.Description</h4>
+<h6>@Model.difSkill.Count like(s)</h6>
+@{
+    if(Model.UserId == ViewBag.LoggedInUser.UserId)
+    {
+        <a href="/delete/@Model.ArtistId" class="btn btn-danger">Delete</a>
+        <a href="/edit/@Model.ArtistId" class="btn btn-info">Edit</a>
+        if(Model.difSkill.Any(f=>f.UserId == ViewBag.LoggedInUser.UserId))
+        {
+        <a href="/unlike/@Model.ArtistId/@ViewBag.loggedInUser.UserId" class="btn btn-primary">UnLike</a>
+        } else {
+            <a href="/like/@Model.ArtistId/@ViewBag.loggedInUser.UserId" class="btn btn-primary">Like</a>
+        }
+    } else {
+        if(Model.difSkill.Any(f=>f.UserId == ViewBag.LoggedInUser.UserId))
+        {
+        <a href="/unlike/@Model.ArtistId/@ViewBag.loggedInUser.UserId" class="btn btn-primary">UnLike</a>
+        } else {
+            <a href="/like/@Model.ArtistId/@ViewBag.loggedInUser.UserId" class="btn btn-primary">Like</a>
+        }
+    }
+}

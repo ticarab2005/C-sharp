@@ -88,7 +88,7 @@ namespace Artistry.Controllers
         }
 
         [HttpGet("dashboard")]
-        public IActionResult Dashboard(int hobbyId)
+        public IActionResult Dashboard(int artistId)
         {
             if (HttpContext.Session.GetInt32("loggedInUser") == null)
             {
@@ -96,79 +96,91 @@ namespace Artistry.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.UserId == (int)HttpContext.Session.GetInt32("loggedInUser"));
-            ViewBag.allHobbies = _context.Artists.Include(r => r.difSkill).ToList();
+            ViewBag.allArtists = _context.Artists.Include(r => r.difSkill).ToList();
             return View("Dashboard");
         }
+        [HttpGet("portfolio")]
+        public IActionResult Portfolio(int artistId)
+        {
+            if (HttpContext.Session.GetInt32("loggedInUser") == null)
+            {
+                ModelState.AddModelError("loggedInUser", "Not signed in!");
+                return RedirectToAction("Index");
+            }
+            ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.UserId == (int)HttpContext.Session.GetInt32("loggedInUser"));
+            ViewBag.allArtist = _context.Artists.Include(r => r.difSkill).ToList();
+            return View("Portfolio");
+        }
 
-        // [HttpGet("new")]
-        // public IActionResult New()
-        // {
-        //     ViewBag.UserId = (int)HttpContext.Session.GetInt32("loggedInUser");
-        //     if (HttpContext.Session.GetInt32("loggedInUser") == null)
-        //     {
-        //         ModelState.AddModelError("loggedInUser", "Not signed in!");
-        //         return RedirectToAction("Index");
-        //     }
-        //     ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.UserId == (int)HttpContext.Session.GetInt32("loggedInUser"));
-        //     return View("New");
-        // }
+        [HttpGet("new")]
+        public IActionResult New()
+        {
+            ViewBag.UserId = (int)HttpContext.Session.GetInt32("loggedInUser");
+            if (HttpContext.Session.GetInt32("loggedInUser") == null)
+            {
+                ModelState.AddModelError("loggedInUser", "Not signed in!");
+                return RedirectToAction("Index");
+            }
+            ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.UserId == (int)HttpContext.Session.GetInt32("loggedInUser"));
+            return View("New");
+        }
 
-        // [HttpPost("createHobby")]
-        // public IActionResult CreateHobby(Hobby newHobby, int hobbyId)
-        // {
-        //     ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.UserId == (int)HttpContext.Session.GetInt32("loggedInUser"));
-        //     if (_context.Artists.Any(u => u.HobbyName == newHobby.HobbyName))
-        //     {
-        //         ModelState.AddModelError("HobbyName", "Activity Already Exists!");
-        //         return View("New");
-        //     }
-        //     if (ModelState.IsValid)
-        //     {
-        //         newHobby.UserId = (int)HttpContext.Session.GetInt32("loggedInUser");
-        //         _context.Add(newHobby);
-        //         _context.SaveChanges();
-        //         return Redirect($"/show/{newHobby.HobbyId}");
-        //     }
-        //     else
-        //     {
+        [HttpPost("createArtwork")]
+        public IActionResult CreateArtwork(Artist newArtwork, int artistId)
+        {
+            ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.UserId == (int)HttpContext.Session.GetInt32("loggedInUser"));
+            if (_context.Artists.Any(u => u.title == newArtwork.title))
+            {
+                ModelState.AddModelError("title", "Artwork Already Exists!");
+                return View("New");
+            }
+            if (ModelState.IsValid)
+            {
+                newArtwork.UserId = (int)HttpContext.Session.GetInt32("loggedInUser");
+                _context.Add(newArtwork);
+                _context.SaveChanges();
+                return Redirect($"/show/{newArtwork.ArtistId}");
+            }
+            else
+            {
 
-        //         return View("New");
-        //     }
-        // }
+                return View("New");
+            }
+        }
 
-        // [HttpGet("show/{hobbyId}")]
-        // public IActionResult Show(int hobbyId)
-        // {
-        //     if (HttpContext.Session.GetInt32("loggedInUser") == null)
-        //     {
-        //         ModelState.AddModelError("loggedInUser", "Not signed in!");
-        //         return RedirectToAction("Index");
-        //     }
-        //     ViewBag.allHobbies = _context.Artists.Include(g => g.myUser).ToList();
-        //     ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.UserId == (int)HttpContext.Session.GetInt32("loggedInUser"));
-        //     Hobby single = _context.Artists.Include(f => f.Enthusiastfor).ThenInclude(g => g.User).FirstOrDefault(e => e.HobbyId == hobbyId);
-        //     return View(single);
-        // }
+        [HttpGet("show/{artistId}")]
+        public IActionResult Show(int artistId)
+        {
+            if (HttpContext.Session.GetInt32("loggedInUser") == null)
+            {
+                ModelState.AddModelError("loggedInUser", "Not signed in!");
+                return RedirectToAction("Index");
+            }
+            ViewBag.allHobbies = _context.Artists.Include(g => g.myUser).ToList();
+            ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.UserId == (int)HttpContext.Session.GetInt32("loggedInUser"));
+            Artist single = _context.Artists.Include(f => f.difSkill).ThenInclude(g => g.User).FirstOrDefault(e => e.ArtistId == artistId);
+            return View(single);
+        }
 
-        // [HttpGet("join/{hobbyId}/{userId}")]
-        // public IActionResult Join(int hobbyId, int userId)
-        // {
-        //     if (HttpContext.Session.GetInt32("loggedInUser") == null)
-        //     {
-        //         ModelState.AddModelError("loggedInUser", "Not signed in!");
-        //         return RedirectToAction("Index");
-        //     }
-        //     if (HttpContext.Session.GetInt32("loggedInUser") != userId)
-        //     {
-        //         RedirectToAction("Logout");
-        //     }
-        //     Enthusiast oneEnthusiast = new Enthusiast();
-        //     oneEnthusiast.HobbyId = hobbyId;
-        //     oneEnthusiast.UserId = userId;
-        //     _context.Add(oneEnthusiast);
-        //     _context.SaveChanges();
-        //     return RedirectToAction("Dashboard");
-        // }
+        [HttpGet("join/{artistId}/{userId}")]
+        public IActionResult Join(int artistId, int userId)
+        {
+            if (HttpContext.Session.GetInt32("loggedInUser") == null)
+            {
+                ModelState.AddModelError("loggedInUser", "Not signed in!");
+                return RedirectToAction("Index");
+            }
+            if (HttpContext.Session.GetInt32("loggedInUser") != userId)
+            {
+                RedirectToAction("Logout");
+            }
+            Skill oneSkill = new Skill();
+            oneSkill.ArtistId = artistId;
+            oneSkill.UserId = userId;
+            _context.Add(oneSkill);
+            _context.SaveChanges();
+            return RedirectToAction("Dashboard");
+        }
 
         [HttpGet("logout")]
         public IActionResult Logout()

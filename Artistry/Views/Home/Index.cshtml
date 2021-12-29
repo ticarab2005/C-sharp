@@ -1,8 +1,53 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+﻿@model User
+<h1 class="text-center jumbotron nav-title">Welcome to Artistry!</h1>
+<div class="d-flex justify-content-around">
+        <form action="/register" method="POST" class="col-4 bg-light p-5">
+            <h2 class="text-warning display-5 text-center">Register</h2>
+            <br>
+            <div class="mb-3 row">
+                <label for="Username" class="box">Username: </label>
+                <input asp-for="Username" class="form-control" style="Width: 200px;">
+            </div>
+                <span asp-validation-for="Username" class="text-danger"></span>
+            <br>
+            <div class="mb-3 row">
+                <label for="Email" class="fix">Email: </label>
+                <input asp-for="Email" class="form-control" style="Width: 200px;">
+            </div>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            <br>
+            <div class="mb-3 row">
+                <label for="Password" class="align">Password</label>
+                <input asp-for="Password" class="form-control" style="Width: 200px;">
+            </div>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            <br><br>
+            <div class="mb-3 row">
+                <label for="Confirm" class="pw">PW Confirm</label>
+                <input asp-for="Confirm" class="form-control" style="Width: 200px;">
+                <span asp-validation-for="Confirm" class="text-danger"></span>
+            </div>
+            <br>
+                <label class="text-dark" for="birthdate">Birthdate:</label>
+                <input class="text-dark" type="date" name="birthdate" id="birthdate">
+                <br><br>
+                <br>
+                <h4 class="text-dark">Gender Identity:</h4>
+                <input type="radio" name="gender" id="male" value="male">
+                <label class="text-dark" for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label class="text-dark" for="female">Female</label>
+                <input type="radio" name="gender" id="nonbinary" value="nonbinary">
+                <label class="text-dark" for="nonbinary">Non-Binary</label>
+                <input type="radio" name="gender" id="prefer_not_to_say" value="prefernottosay">
+                <label class="text-dark" for="prefer_not_to_say">Prefer not to say</label>
+            <br>
+            <br>
+            <div class="right">
+                <input type="submit" value="Register" class="btn mb-5 btn-warning btn-outline-dark space">
+            </div>
+        </form>
+        <div class="col-4 p-2 bd-highlight">
+        <partial name="_Login" />
+    </div> 
 </div>
